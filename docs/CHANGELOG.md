@@ -17,3 +17,7 @@
 - Added original synthetic state/action/zone/priority and observation contracts, tests, manual rule-source ledger and rule-to-test traceability.
 - Verified previous sources and regression; 20/20 final CTest executions across five configurations; direct fingerprints matched after rerunning timed-out shell tail.
 - Published exact verified source blobs in ae649d188d792a6a3e14dd61842b59e895d8417b. CTR-1 remains open; no official game data, rules, simulations or paid compute.
+
+## 2026-11-24 — CTR-1 generic subtask B
+- Added versioned synthetic event resolution with replacement precedence/cancellation, FIFO triggers, balance invariants, cycle detection, finite budgets and atomic rejection.
+- Final 25/25 CTest executions passed across five configurations; isolated sanitizer rerun after shell timeout passed. Nine source blobs matched candidate commit 3aac314886d83cdb4b159e84d097a58f10847cd8. Added SYN-E01..05 traceability and CTR-E0004. CTR-1 remains open.

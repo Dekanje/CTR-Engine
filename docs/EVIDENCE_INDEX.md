@@ -81,3 +81,31 @@ Linux x86_64, same local toolchain as E0002; GCC 14.2.0 and Clang 17.0.0 reconfi
 Each new fixture test exhausts 16 visibility masks x (12 nonterminal structural combinations + 1 terminal) = 208 valid structural states (fixed labels), rejects 48 invalid terminal structural states, checks both viewer projections (416), checks 6,240 actor/action/target candidates including invalid kind and target, tests exact action enumeration, expected transition/invariants and opponent-private-label perturbation noninterference. Additional invalid actor/viewer/zone examples. Synthetic rule mapping SYN-K01..05 in RULE_TRACEABILITY.md. Counts are repeated per configuration, not independent random trials; new fixture uses no RNG. Previous seed roots unchanged per E0002. No official rules or deck hashes, no game samples, no competitive inference or statistical intervals. Timings are tests, not benchmark.
 
 Subtask A validated; full CTR-1 gate NOT accepted. Manual ledger created with no official sources admitted; no machine enforcement or legal verification. Remaining generic and authorized game-specific work explicit in handover.
+
+## CTR-E0004 — CTR-1 generic subtask B, 2026-11-24
+
+Parent 96a4336ecfb1fdf60e91dd2acc20bea64290b2ac; implementation 3aac314886d83cdb4b159e84d097a58f10847cd8. Reviewed twelve continuity/source documents and verified seven prior local source hashes against recorded repository evidence. Local Linux x86_64, GCC 14.2.0, Clang 17.0.0, CMake 3.31.6, Python 3.13.5, Git 2.47.3. Exact tested Git blobs (all nine verified on candidate commit before publishing):
+
+| Path | Git blob | SHA-256 |
+| --- | --- | --- |
+| CMakeLists.txt | b8d148d146031d8b745f817633bd1c086235b6a5 | 3fa7bc53fbf9833ec191efab0848ad196941fd30d129403ed862aa0b485947b3 |
+| include/ctr/core.hpp | dc0ce85ef249fbaabb2e096bad5851a1719b208b | d82a67b61a3e24122dc59508303beede4cdc46290da14cb94e592c13f60a5f64 |
+| include/ctr/effects.hpp | 38213b24adac1a826c2e4e402bd1f921f4dfb50d | 66b32bdcba77346216e048383b68c4eb5802357e308221336eb3041ede000267 |
+| include/ctr/kernel.hpp | fd14b2b69cc5e03e4d87c3d5b5da4f152bfe0e0a | 627138cf03a4943763e9a3e8bf41b7892785f4c8b5fa72d7eb625e600b2ab875 |
+| src/probe.cpp | 395c06320a7b2b3807a36ae1c549e88d7319a245 | 69bda40464cbf8f21e930cd76be47c4b92e1c4be0b4205a8b6cd049cc8076a64 |
+| tests/core_test.cpp | a9b4ec0dcc3842fcdc51b19ee74f09f59ef76a1c | fcdf7c9e543ee05107d25ab064a0e5375e67f18d31eed4358cc4d0ba6cd53dfa |
+| tests/effect_test.cpp | 6ef6a30e8ade4edd4afa31e2519b33ab8e6c2946 | 66b4424f8ed2fe1871bf871ba92832f92c60d50851fe7c9bb75923ff3ab71d25 |
+| tests/kernel_test.cpp | 6e755fa477631f50f440e66cfa5696ccc09e47ff | 75d119ade53c011385bafcd7bb4a73dde64974969b526145a3111071eb838d87 |
+| tests/probe_test.py | 46bc3d51058851ca740abb71ffda4c4d89451bad | dbacf10080f46edcdc4c6a420c157d596f0099b9bcc1060c12b926f70488ac8b |
+
+Commands: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD_TYPE=<Debug/Release>; cmake --build <build> --parallel 2; ctest --test-dir <build> --output-on-failure. Clang sanitizer Debug CMAKE_CXX_FLAGS='-fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer'; ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1.
+
+| Build | CTest passed | Wall time |
+| --- | --- | --- |
+| GCC Release | 5/5 | 0.97 s |
+| GCC Debug | 5/5 | 1.16 s |
+| Clang Debug | 5/5 | 1.20 s |
+| Clang Release | 5/5 | 0.99 s |
+| Clang ASan/UBSan | 5/5 | 4.56 s |
+
+25/25 final CTest executions passed, no sanitizer diagnostics. Combined shell command timed out during first sanitizer CTest invocation; standalone full sanitizer rerun passed 5/5, no source correction needed. All five direct effect test outputs identical: effects-v1:40400 balance cases:2880 permutations. Each effect execution checks 101 balances x 100 amounts x 2 targets x 2 kinds with arithmetic oracle and input equality; 4! x 5! permutations of registration order against exact six-record oracle; replacement self/two-event cycles, trigger recursion, fan-out, late invalid transition, exact budget success, malformed input and program rejection. No RNG used by new tests; prior core seed roots unchanged. Counts repeat across configurations, not independent statistical trials. No game/deck hashes or game samples, no benchmark or competitive inference; no statistical intervals applicable. No cloud jobs dispatched. Subtask B validated only; full CTR-1 gate open.

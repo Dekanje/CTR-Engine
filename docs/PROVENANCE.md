@@ -9,3 +9,5 @@ AlphaRune and historical RB-Analyser: prohibited as implementation/evidence sour
 CTR-0.2: include/ctr/core.hpp and tests/core_test.cpp independently authored generic code and synthetic counter fixture; CMakeLists.txt extended. Standard C++ random, span, array and exception facilities only; no new external dependencies or game materials. Source identities and validation in CTR-E0002. No AlphaRune or legacy repository access.
 
 CTR-1 subtask A: include/ctr/kernel.hpp and tests/kernel_test.cpp original synthetic contract and tests; CMakeLists.txt extended. No new external dependencies. docs/RULE_SOURCE_LEDGER.md schema 1 and docs/RULE_TRACEABILITY.md describe manual source admission and original fixture rules. No official game source or third-party implementation admitted; no AlphaRune or historical repository access. Rights unresolved.
+
+CTR-1 subtask B: original include/ctr/effects.hpp and tests/effect_test.cpp; extended CMakeLists.txt and synthetic specification/traceability. Standard C++ containers and algorithms only, no external packages or official game materials. No AlphaRune or historical repository inputs. Evidence CTR-E0004.

@@ -13,3 +13,6 @@ D008: Recover interrupted local source and rerun complete five-build matrix befo
 D009: Divide open CTR-1 into independently validated generic subtasks while official rules authorization is unresolved; subtask A is not full-gate acceptance. Fixed-size synthetic slots and pass/reveal actions are deliberately non-game-specific.
 D010: Separate authoritative state and trusted observation; generate fixture actions from the observation and validate against authority on application. Counts and slot identities are public/inferable in this model. No claim of general secrecy or sandboxing.
 D011: Establish versioned manual source admission ledger and synthetic traceability. No official source admitted; machine enforcement and authorization verification remain open.
+
+D012: Use explicit, versioned immutable synthetic event tables rather than arbitrary callbacks for first resolution contract; ascending ID precedence and FIFO scheduling are synthetic conventions, not official rules.
+D013: Use bounded transactional value-returning resolution, exact repeated-event cycle detection for replacements, and finite event/queue budgets for trigger cascades. Reject on limit exhaustion, never truncate or commit partial results. Keep trace authoritative and in-memory until serialization/observation contract is defined.

@@ -5,6 +5,7 @@ This ledger records admission decisions, not legal advice or proof of authorizat
 | Source ID | Version / locator | Scope | Status |
 | --- | --- | --- | --- |
 | CTR-SYN-KERNEL | 1; docs/RULE_TRACEABILITY.md | Original synthetic contract fixture; repository implementation and tests | Generic development only |
+| CTR-SYN-EFFECTS | 1; docs/RULE_TRACEABILITY.md | Original bounded synthetic resolution contract and tests | Generic development only |
 | RB-RULES | Unestablished | Official rules, timing, combat, scoring, effects | Pending authorization and versioned source |
 | RB-CONTENT | Unestablished | Functional card definitions, print equivalence, sets, errata | Pending authorization and versioned source |
 | RB-FORMATS | Unestablished | Format legality and restrictions, event procedures | Pending authorization and versioned source |
