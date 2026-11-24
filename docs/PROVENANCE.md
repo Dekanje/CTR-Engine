@@ -7,3 +7,5 @@ External application/library dependencies integrated: none. Build tools observed
 AlphaRune and historical RB-Analyser: prohibited as implementation/evidence sources; no access or dependencies in this bootstrap. No official card text, data, imagery, rules extracts, game recordings or rankings used. Riot-related permissions unresolved. No project license granted or selected.
 
 CTR-0.2: include/ctr/core.hpp and tests/core_test.cpp independently authored generic code and synthetic counter fixture; CMakeLists.txt extended. Standard C++ random, span, array and exception facilities only; no new external dependencies or game materials. Source identities and validation in CTR-E0002. No AlphaRune or legacy repository access.
+
+CTR-1 subtask A: include/ctr/kernel.hpp and tests/kernel_test.cpp original synthetic contract and tests; CMakeLists.txt extended. No new external dependencies. docs/RULE_SOURCE_LEDGER.md schema 1 and docs/RULE_TRACEABILITY.md describe manual source admission and original fixture rules. No official game source or third-party implementation admitted; no AlphaRune or historical repository access. Rights unresolved.

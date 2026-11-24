@@ -10,5 +10,8 @@
 - No CI workflow or local PC execution configured; GitHub quota/spend settings not verified. Intensive computation remains unavailable in this session.
 
 - CTR-0.2 fixture is deliberately synthetic; its three-byte state/event schemas are not production formats. Generic random streams use mt19937_64 and seed_seq; domain separation and consumption isolation tested, not statistical independence or cryptographic security.
-- Bounded sampling requires uniform full-width input; untrusted/adversarial sources can stall rejection. No RNG persistence, authenticated replay, weighted chance, hidden-information interfaces or production performance benchmark yet.
+- Bounded sampling requires uniform full-width input; untrusted/adversarial sources can stall rejection. No RNG persistence, authenticated replay, weighted chance, production hidden-information interfaces or production performance benchmark yet.
 - CTR-1 game-specific work blocked by authorization/provenance; generic contracts can proceed independently.
+
+- CTR-1 subtask A implements only an original fixed two-player/four-slot synthetic fixture. Opponent private labels are omitted, but slot IDs, ownership and counts are structurally public/inferable; no hidden ordering, visibility history, stale-action protection, arbitrary observation validation or process isolation. Observation is a trusted projection, not a sandbox. No production replay integration for the fixture.
+- Rights ledger schema 1 is a manual admission gate, not machine-enforced authorization. No official sources admitted; official timing, zones, combat, scoring, resources, triggers, replacements and continuous effects remain unimplemented. CTR-1 full gate open.

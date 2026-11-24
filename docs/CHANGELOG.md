@@ -12,3 +12,8 @@
 - Added original deterministic primitives, canonical synthetic state/event encoding, explicit chance and replay, and exhaustive finite-domain and seeded tests.
 - Recovered interrupted local work; reran five build configurations including ASan/UBSan, 15/15 CTest executions passed and fingerprints matched.
 - Published implementation a3a572e407e9ab7840da891e46ed33dd545f5fea after matching all five tested source blobs; baseline gate satisfied. No game-specific code, historical imports or paid compute.
+
+## 2026-11-24 — CTR-1 generic subtask A
+- Added original synthetic state/action/zone/priority and observation contracts, tests, manual rule-source ledger and rule-to-test traceability.
+- Verified previous sources and regression; 20/20 final CTest executions across five configurations; direct fingerprints matched after rerunning timed-out shell tail.
+- Published exact verified source blobs in ae649d188d792a6a3e14dd61842b59e895d8417b. CTR-1 remains open; no official game data, rules, simulations or paid compute.
