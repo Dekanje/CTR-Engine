@@ -29,3 +29,8 @@
 ## 2026-11-24 — CTR-1 generic subtask D
 - Added standalone simultaneous conflict, survival/removal, score invariant, terminal outcomes and bounded replay fixture.
 - Fixed initial std::apply collision; all five final builds passed 35/35 CTest executions. Recorded CTR-E0006 and SYN-D01..05. No official game rules or full CTR-1 acceptance.
+
+## 2026-11-24 — CTR-1 generic subtask E
+- Added bounded data-driven integer modifiers with activation masks, deterministic layer/ID ordering, validation and variable final-payment fixture.
+- Integrated equivalent v1 cost evaluation; narrowed action filtering to typed resource failures and distinguished illegal actions/invariant errors. Existing replay semantics retained on tested fixtures.
+- Five fresh local configurations passed 40/40 CTest executions; CTR-E0007 and SYN-M01..05 recorded. CTR-1 remains open; authorization and official-rule validation critical path.

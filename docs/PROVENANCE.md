@@ -15,3 +15,5 @@ CTR-1 subtask B: original include/ctr/effects.hpp and tests/effect_test.cpp; ext
 CTR-1 subtask C: include/ctr/integrated.hpp and tests/integrated_test.cpp are original CTR synthetic integration code recovered from prior local work; CMakeLists.txt extended. Reuses only independently implemented CTR core/kernel/effects headers. No new external dependencies, official game materials, historical project or AlphaRune inputs. Evidence CTR-E0005; authorization remains unresolved.
 
 CTR-1 subtask D: original include/ctr/conflict.hpp and tests/conflict_test.cpp; CMakeLists.txt extended. Uses CTR core and standard C++ only, no external dependencies or official materials. No AlphaRune or historical repository access. Evidence CTR-E0006, source ledger CTR-SYN-CONFLICT.
+
+CTR-1 subtask E: original include/ctr/modifiers.hpp and tests/modifier_test.cpp; effects.hpp, integrated.hpp and CMakeLists.txt extended. Uses existing original CTR code and standard C++ only. No new external dependencies, official game materials, AlphaRune or historical repository inputs. Evidence CTR-E0007; authorization unresolved.

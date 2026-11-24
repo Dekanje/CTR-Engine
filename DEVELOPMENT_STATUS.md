@@ -12,6 +12,7 @@ CTR-0.1: bootstrap gate satisfied against baseline v0.1. Implementation commit e
 | CTR-1 generic subtask B | Validated: bounded transactional event resolution, replacement and trigger ordering (CTR-E0004) |
 | CTR-1 generic subtask C | Validated: synthetic state/action/effect integration, zone-derived modifier and replay (CTR-E0005) |
 | CTR-1 generic subtask D | Validated standalone simultaneous conflict, scoring and terminal replay (CTR-E0006) |
+| CTR-1 generic subtask E | Validated: bounded continuous modifiers and distinct resource/action rejection (CTR-E0007) |
 | Rules kernel / format legality | CTR-1 in progress; official semantics not implemented |
 | Card and legend behavior | Zero verified |
 | Gameplay agents and BO3 | Not implemented |
@@ -29,4 +30,6 @@ CTR-1 subtask C implementation ee53d3104c5621772907209c93a3500ff56cf78c: recover
 
 CTR-1 subtask D: 35/35 final CTest executions, five configurations; 1,171,875 order candidates and 48,128 legal transitions per conflict test. Evidence CTR-E0006, identified by exact source blobs and the commit containing that record. Standalone synthetic fixture, not integrated with subtask C. Full CTR-1 gate remains OPEN.
 
-Next within CTR-1: prioritize official-source/authorization admission; this is the substantive blocker for actual Riftbound implementation. Independently useful generic subtask E: separate legality failures from engine/configuration errors in the existing integration, and design/test a data-driven continuous modifier contract with actual final-value changes and explicit ordering. Do not expand arbitrary fixture semantics into purported game rules. Integration of simultaneous conflict with existing action/effect/observation contracts remains outstanding. Do not advance CTR-2 before full CTR-1 acceptance. Subtask E is a local engineering subdivision; reconcile canonical detailed master plan if available.
+CTR-1 subtask E: 40/40 CTest executions across five local build configurations. Generic modifier evaluator integrated into existing v1 cost computation; v1 behavior unchanged on regression fixtures. Separate variable-payment fixture demonstrates final-value changes with replacements and triggers. Action enumeration catches only ResourceViolation; configuration and engine failures propagate. See CTR-E0007, exact source identities, and the commit containing the record. Full CTR-1 gate remains OPEN.
+
+Next: CTR-1 authorized source admission is the critical path. No official source or authorization evidence is recorded. Complete source/rights review before game-specific implementation. While blocked, limit generic development to reusable validation and infrastructure, not new invented gameplay. Specifically, audit all CTR-1 requirements against the existing contracts, strengthen replay identity and observation validation/error classification, and define a production integration plan without assuming rule semantics. No CTR-2 advancement until the official rule-derived gate is satisfied. Subtasks are engineering subdivisions, not new approved gates.

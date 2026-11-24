@@ -1,9 +1,13 @@
 #pragma once
 #include "ctr/kernel.hpp"
 #include "ctr/effects.hpp"
+#include "ctr/modifiers.hpp"
 
 // Synthetic integration fixture only; not official game semantics.
 namespace ctr::integrated {
+struct IllegalAction : std::invalid_argument {
+    using std::invalid_argument::invalid_argument;
+};
 struct State {
     kernel::State board;
     effects::State resources;
@@ -28,11 +32,18 @@ inline Observation observe(State const& s, kernel::Player viewer) {
 }
 // Cost is derived from the PRE-action public zones, never from labels.
 inline unsigned cost(kernel::Observation const& o, kernel::Player actor) {
-    unsigned count = 0;
-    for (auto const& v : o.visible)
-        if (v.owner == actor && v.object.zone == kernel::Zone::public_area) ++count;
-    if (!kernel::valid(actor) || count > 2) throw std::invalid_argument("modifier input");
-    return 3 - count;
+    if (!kernel::valid(actor)) throw std::invalid_argument("modifier actor");
+    unsigned mask = 0;
+    for (auto const& v : o.visible) {
+        if (v.owner != actor || v.object.zone != kernel::Zone::public_area) continue;
+        if (v.id.value >= 4 || kernel::owner(v.id) != actor || (mask & (1u << v.id.value)))
+            throw std::invalid_argument("modifier slot");
+        mask |= 1u << v.id.value;
+    }
+    const std::array rules{
+        modifiers::Rule{1, 0, 1u << (2 * actor.value), modifiers::Operation::add, -1},
+        modifiers::Rule{2, 0, 1u << (2 * actor.value + 1), modifiers::Operation::add, -1}};
+    return modifiers::evaluate(3, mask, rules);
 }
 inline effects::Program program() {
     effects::Program p;
@@ -56,16 +67,17 @@ inline std::vector<kernel::Action> actions(Observation const& o) {
     std::vector<kernel::Action> out;
     if (!effects::valid(o.resources)) throw std::invalid_argument("observation resources");
     for (auto a : kernel::actions(o.board)) {
-        try { (void)payment(o, a); } catch (const std::invalid_argument&) { continue; }
+        try { (void)payment(o, a); } catch (const effects::ResourceViolation&) { continue; }
         out.push_back(a);
     }
     return out;
 }
 inline Result apply(State const& s, kernel::Action a) {
-    if (!valid(s) || !kernel::legal(s.board, a)) throw std::invalid_argument("integrated action");
+    if (!valid(s)) throw std::invalid_argument("integrated state");
+    if (!kernel::legal(s.board, a)) throw IllegalAction("integrated action");
     auto pay = payment(observe(s, a.actor), a);
     auto next = State{kernel::apply(s.board, a), pay.state};
-    if (!valid(next)) throw std::invalid_argument("integrated invariant");
+    if (!valid(next)) throw std::logic_error("integrated invariant");
     return {next, std::move(pay.trace)};
 }
 using ActionBytes = std::array<std::uint8_t, 4>;

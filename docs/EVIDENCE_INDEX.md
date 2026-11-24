@@ -163,3 +163,29 @@ Commands: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD
 | Clang ASan/UBSan | 7/7 | 5.17 s |
 
 35/35 final CTest executions passed, zero final failures and no sanitizer diagnostics. Direct output identical across five configurations: conflict-v1:1171875 candidates:48128 accepted. Per configuration: 5^4 x 3 = 1,875 state round-trips; 5^4 order vectors per state = 1,171,875 candidate checks, 48,128 accepted transitions with independent arithmetic/outcome oracle, unchanged input and replay. Explicit malformed/negative and terminal scenarios. New fixture deterministic, no RNG; prior core seeds unchanged from E0002. Counts repeat across builds, not independent statistical samples. No actual game/deck/agent hashes, native matches, uncertainty intervals or performance benchmark. No official source admission, paid compute or historical input. Subtask D synthetic validation only; full CTR-1 acceptance not satisfied.
+
+## CTR-E0007 — CTR-1 generic subtask E, 2026-11-24
+
+Parent 92ccf3ec5d961cb8cf77424964117b544af694cb; code and evidence in same publication commit. Reviewed twelve continuity/source documents and permanent project instructions. Verified thirteen local baseline Git blobs against E0005/E0006. No workflow runs returned for parent, no CI dispatched. Fresh local builds Linux x86_64, GCC 14.2.0 (Debian 14.2.0-19), Clang 17.0.0 (10999b6d034fe318f3d56c83bddb6572593a8bb0), CMake 3.31.6. Exact changed/new source identities from final local run:
+
+| Path | Git blob | SHA-256 |
+| --- | --- | --- |
+| CMakeLists.txt | b9ca0088b42dc3909c5882165f21c9d09725b47b | d5ff30a42e39d9a55c4ec471acb192a010cd7dde95d110eb0b86ee09c628bc0a |
+| include/ctr/effects.hpp | 8dd8fd9c83ddaae94d656b52055c8354a805076b | c937b86cdf768bf1942ff8bcc21d7baf2419fd8eac66f5e7d3ff667659565f4f |
+| include/ctr/integrated.hpp | 5cdd6f3f08543e2a442d1e2a79c19cb5eceaf1a6 | c9b9070cf24f2fd46d0beee39aaf790d507aebc36d487b632dae04f6187fe9da |
+| include/ctr/modifiers.hpp | 1305a50fe65df0eb4e11a967e27930ee047637ae | f6299602fd2d58f3a701fc0409d242846468f39f476f90964587c5dd9815eea8 |
+| tests/modifier_test.cpp | 780aabd13d7780ab1f90b20b4db8651709efd726 | 508db4eabe63705f4eaf17e9bc88c76ddedc7b469d43605e3b17f5a01da5c62d |
+
+Remaining ten source files unchanged from E0005/E0006 (exclude CMakeLists.txt, effects.hpp and integrated.hpp from previous thirteen). Require fifteen source hash matches before main advances.
+
+Commands: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD_TYPE=<Debug/Release>; cmake --build <build> --parallel 2; ctest --test-dir <build> --output-on-failure; direct ctr_modifier_test. Clang sanitizer Debug uses -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer; ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1. First Release build passed. Unsupported streaming invocation for remaining builds retried via regular execution. No code/test failure or source correction needed.
+
+| Build | CTest passed | Wall time |
+| --- | --- | --- |
+| GCC Release | 8/8 | 0.98 s |
+| GCC Debug | 8/8 | 1.32 s |
+| Clang Debug | 8/8 | 1.52 s |
+| Clang Release | 8/8 | 1.13 s |
+| Clang ASan/UBSan | 8/8 | 5.12 s |
+
+40/40 CTest executions passed; no sanitizer diagnostics. All five direct outputs identical: modifiers-v1:7680 ordered cases. Each new test checks 4! registration permutations x 16 masks x 20 base values against independent ordered arithmetic, multi-mask and boundary examples, 11 invalid modifier input examples, separate inactive/active/inactive payment with distinct final balances, resource/illegal-action versus configuration failure checks including malformed observation propagation. Existing integration/replay/conflict regressions passed unchanged. No new RNG; prior seeds as E0002. Repeated configurations not independent stochastic samples. No native Riftbound games, card/agent/deck hashes, competitive estimates, statistical intervals or performance benchmark. No official source admission, historical inputs or paid jobs. Subtask E validated only; full CTR-1 gate OPEN.

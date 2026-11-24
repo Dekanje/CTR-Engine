@@ -47,3 +47,15 @@ This is original synthetic semantics. Cost normalization means final legal revea
 | SYN-D05 | Version-1 state bytes (12) and order bytes (5); replay at most four batches, rejecting malformed and post-terminal logs. | Single-batch replay for each accepted transition, multi-batch terminal fixture, malformed order/version/length and oversized/post-terminal rejection |
 
 Finite domain is HP/power 1..2 plus removed for exhaustive candidate enumeration, round values 0,3,4; HP/power 3 covered by explicit cases. Not a full-state exhaustive proof. Standalone fixture with no official game semantics, hidden choices, effects, or integration with prior kernel.
+
+## Generic modifier and error contract CTR-SYN-MODIFIERS v1
+
+| Rule ID | Specification | Test evidence (tests/modifier_test.cpp, CTest continuous_modifiers) |
+| --- | --- | --- |
+| SYN-M01 | Base and every intermediate value 0..100; set 0..100, add -100..100, multiply 0..4; max 64 rules, layer 0..7, four-bit masks, unique nonzero IDs. Validate inactive rules too. | Boundary, malformed ID/mask/layer/operand/operation/count, duplicate ID and range rejection examples |
+| SYN-M02 | Active iff all required mask bits present; evaluate from base each call in ascending (layer,id) order independent of registration order. | 7,680 cases: 24 registration permutations x 16 masks x 20 bases, independent arithmetic oracle; multi-bit activation and removal |
+| SYN-M03 | Derived value may feed effect resolver. In separate fixture base debit 5, inactive replacement to 4; active discount gives debit 3 and triggers credit to opponent. | Inactive/active/inactive sequence gives final balances (6,10)/(7,11)/(6,10) from (10,10); trace length checked |
+| SYN-M04 | Resource bounds failures are ResourceViolation; invalid kernel action IllegalAction; other configuration/input errors propagate; invariant faults are logic_error. Only ResourceViolation is filtered by integrated action enumeration. | Underflow and triggered overflow, bad program version, replacement loop, event budget, invalid state, illegal actor, and malformed duplicate public projection (must propagate) |
+| SYN-M05 | Existing v1 payment semantics retained: public-slot mask drives equivalent cost calculation, fixed replacement/trigger program unchanged. | Full synthetic_integration regression, 3,072 reveal candidates, 1,536 projection perturbations and existing replay fixtures across all builds |
+
+Bounded fixture/general utility, not official semantics. Separate variable-payment case is not the v1 integrated game; no dynamic dependency graph or complete observation validation. ResourceViolation does not yet distinguish expected unaffordability from a resource failure caused by arbitrary faulty rules.

@@ -7,6 +7,10 @@
 
 // Synthetic resolution contract, independent of game semantics.
 namespace ctr::effects {
+// Only resource-bound violations are expected action-level rejections.
+struct ResourceViolation : std::invalid_argument {
+    using std::invalid_argument::invalid_argument;
+};
 enum class Kind : std::uint8_t { credit, debit };
 struct Event {
     Kind kind;
@@ -101,9 +105,11 @@ inline Result resolve(State initial, std::span<const Event> input, Program const
             const auto e = *record.applied;
             auto& balance = result.state.balance[e.target];
             if (e.kind == Kind::credit) {
-                require(e.amount <= 100 - balance, "overflow"); balance += e.amount;
+                if (e.amount > 100 - balance) throw ResourceViolation("overflow");
+                balance += e.amount;
             } else {
-                require(e.amount <= balance, "underflow"); balance -= e.amount;
+                if (e.amount > balance) throw ResourceViolation("underflow");
+                balance -= e.amount;
             }
             for (auto const& t : triggers) if (t.match == e) {
                 require(queue.size() < lim.pending, "pending budget");
