@@ -47,3 +47,7 @@
 ## 2026-11-24 — CTR-1 verified native replay
 - Added Linux-only bounded binary replay worker and Python exact verified-artifact execution binding using a trusted executable snapshot.
 - Added valid native replay and malformed/mismatch/failure tests; all five final configurations passed 55/55 CTest executions. E0010 records source and executable hashes. Full CTR-1 remains open.
+
+## 2026-11-25 — CTR-1 official source discovery
+- Registered candidate official rules, clarifications, errata, legality, region/event/experiment references and unresolved current artifact identity.
+- Recorded general copyright guidance and distinct developer-policy scope; no source admission or official gameplay implementation. Documentation-only E0011, no new test run. CTR-1 remains open.

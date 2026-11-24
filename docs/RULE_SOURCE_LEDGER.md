@@ -24,3 +24,6 @@ CTR-1 gap audit: see docs/CTR1_GATE_AUDIT.md for outstanding evidence, proposed 
 
 ## Policy review — 2026-11-24
 Reviewed public Riot Developer Portal pages https://developer.riotgames.com/docs/riftbound and https://developer.riotgames.com/policies/riftbound for governance context only. They describe licensing/API-key requirements for apps and restrictions on automated rules enforcement and metagame-data retention. Applicability to the intended strictly offline private research engine is unresolved; this is not legal advice, permission or an admission of gameplay/card data. User directs continued development without support-ticket prerequisite. No rights-holder permission asserted; no ticket submitted. Existing RB-RULES/RB-CONTENT/RB-FORMATS/RB-AUTOMATION statuses unchanged. No policy text or game assets copied into implementation.
+
+## E0011 candidate source discovery — 2026-11-25
+See docs/OFFICIAL_RULE_SOURCE_DISCOVERY.md for publisher locators, reported dates, scope, cache discrepancy and admission checklist. RB-RULES, RB-CONTENT, RB-FORMATS and RB-AUTOMATION remain pending; no official source admitted, exact current document bytes/digests not established. Reviewed Croatian intellectual property office and WIPO general methods/expression guidance; no case-specific clearance or permission inferred. No external request sent.

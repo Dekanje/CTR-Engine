@@ -37,3 +37,6 @@ A generic SHA-256 canonical run manifest is implemented and tested; not yet conn
 
 ## E0010 update — verified native replay
 Manifest-to-native execution binding is validated against the existing synthetic fixture on Linux. Exact artifact comparison, bounded framing and expected state checks improve generic reproducibility, but do not establish official rules, authenticated manifests or production security. Next generic hardening is observation/command freshness. Official authorization/source admission and all official behavioral acceptance evidence remain outstanding; CTR-1 OPEN.
+
+## E0011 update — official source discovery
+Candidate source registry and version/scope review recorded in OFFICIAL_RULE_SOURCE_DISCOVERY.md. Current indexed and opened cached hub versions differ; exact CR/TR bytes and scope admission remain unresolved. No official implementation/test or gate advancement. Prioritize source pinning/admission and rule inventory over additional synthetic work. General legal guidance is not a case-specific determination.
