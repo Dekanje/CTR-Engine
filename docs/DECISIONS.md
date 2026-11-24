@@ -44,3 +44,5 @@ D031: Propose 1v1 Standard Constructed Europe/global-parity circuit as initial r
 
 D032 (2026-11-25): Reconfirm publisher metadata without importing stale July PDFs or third-party transcripts; exact October artifact locators and digests remain unresolved. Do not equate a document revision date with its effective date.
 D033: Implement standalone exact-pin and scope validation of trusted review records, with finite inclusive date ranges and bounded immutable bytes. No wildcard admission, implicit approval or inferred completeness. This is not a legal determination or a runtime integration. Focused tests only because prior full workspace is unavailable; integrate into CTest when restored. No new synthetic gameplay.
+
+D034: At user direction, retain detailed source research outside public version control. Preserve private provenance, required notices, public implementation identities and truthful gate evidence. Do not rewrite historical commits or interpret private storage as authorization.

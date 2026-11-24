@@ -55,3 +55,6 @@
 ## 2026-11-25 — CTR-1 source-profile admission validation
 - Reconfirmed official revision/effective metadata; current immutable artifacts and authorization remain unresolved.
 - Added generic trusted source-profile validation with exact scope, provenance, dates and SHA-256 byte checks. Four focused Python tests passed; no CTest rerun or integration. E0012 recorded. No official rules implemented.
+
+## 2026-11-25 — CTR-1 source verification checkpoint
+- Reran focused source-admission tests (4/4), retained private research record outside GitHub and clarified public documentation boundaries. No source-code changes or official rule admission.
