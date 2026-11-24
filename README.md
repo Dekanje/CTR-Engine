@@ -2,7 +2,7 @@
 
 Independent native simulation research infrastructure. New implementation, not a fork, rename or continuation of another engine. No AlphaRune dependencies or imported implementation.
 
-Status: CTR-0.1 bootstrap; a synthetic C++20/Python feasibility probe, not a Riftbound rules engine. See MASTER_PLAN.md, DEVELOPMENT_STATUS.md and docs/HANDOVER.md.
+Status: CTR-0.1 bootstrap baseline accepted; a synthetic C++20/Python feasibility probe, not a Riftbound rules engine. See MASTER_PLAN.md, DEVELOPMENT_STATUS.md and docs/HANDOVER.md.
 
 Build and test (CMake >= 3.20, C++20 compiler, Python >= 3.10):
     cmake -S . -B build -DCMAKE_BUILD_TYPE=Release

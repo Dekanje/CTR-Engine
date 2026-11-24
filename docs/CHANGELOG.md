@@ -5,3 +5,5 @@
 - Added continuity, architecture, provisional master plan, provenance, limitations and evidence records.
 - Implemented synthetic C++20 process probe and Python contract tests; locally validated four build configurations.
 - No game rules, card data, historical implementation, simulations or CI workflows imported or executed.
+
+- Verified published source identities and continuity records at e5cb2c73e654db5945cf02f906adc297f296659b; recorded baseline CTR-0.1 acceptance.
