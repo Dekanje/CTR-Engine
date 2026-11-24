@@ -15,6 +15,7 @@ CTR-0.1: bootstrap gate satisfied against baseline v0.1. Implementation commit e
 | CTR-1 generic subtask E | Validated: bounded continuous modifiers and distinct resource/action rejection (CTR-E0007) |
 | CTR-1 boundary hardening and gap audit | Validated synthetic projection structure and replay identity/final-state checks (CTR-E0008); official gaps documented |
 | CTR-1 run identity infrastructure | Validated canonical SHA-256 manifest and exact artifact verification (CTR-E0009) |
+| CTR-1 verified native replay | Validated manifest-to-native synthetic replay path (CTR-E0010) |
 | Rules kernel / format legality | CTR-1 in progress; official semantics not implemented |
 | Card and legend behavior | Zero verified |
 | Gameplay agents and BO3 | Not implemented |
@@ -38,4 +39,6 @@ CTR-E0008: 45/45 CTest executions across five local configurations; all seventee
 
 CTR-E0009: 50/50 final CTest executions across five local configurations; canonical SHA-256 run manifest for seven artifact roles and trusted digest comparison. No gameplay changes. User directed continued development without a support ticket; this is development authorization, not evidence of third-party permission. Public Riot policy reviewed on 2026-11-24; no official game source admitted. CTR-1 remains open.
 
-Next: connect verified artifact bytes to native replay execution with strict bounded parsing, immutable snapshots and explicit failure reporting. This is reusable infrastructure, not a new gameplay fixture. The official-source admission and rule-derived validation requirements remain outstanding; no CTR-2 advancement. Prioritize independently justified work, not more invented mechanics. Reconcile detailed canonical master plan if available.
+CTR-E0010: 55/55 CTest executions across five local configurations. Verified immutable artifact snapshot, exact trusted executable matching, bounded binary replay worker and final-state comparison. Existing synthetic rules unchanged. No official material or rights admission. Full CTR-1 remains OPEN.
+
+Next: address remaining authority boundary gap via versioned observation/command binding and stale-action rejection, with explicit session/sequence ownership and negative tests; keep private labels and replay artifacts authority-only. Independently useful generic infrastructure only while official-source admission remains unresolved. Production authorization and rule-derived validation remain essential; do not advance CTR-2 or add arbitrary gameplay. Reconcile detailed canonical master plan if available.

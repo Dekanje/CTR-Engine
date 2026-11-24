@@ -235,3 +235,26 @@ Remaining sixteen source files unchanged from E0005..E0008. Nineteen exact sourc
 | Clang ASan/UBSan | 10/10 | 6.09 s |
 
 50/50 final CTest executions passed, no code/test failures or sanitizer diagnostics. Python manifest suite repeated under the same interpreter (not independent compiler validation of Python). Each checks known SHA-256 vector, structure, 7! = 5040 registration permutations, 168 single-bit artifact mutations, 700 manifest-byte mutations, missing/extra roles, changed sizes, mutable artifact rejection, malformed/noncanonical manifest even when rehashed, invalid trusted digest and regenerated altered artifacts. Fixture manifest length 700; separately computed SHA-256 4ec95a621314e00a35536418c8a842f8aec06a1eb850d4ea03ebc76fbb532d8c. No new RNG, prior seed roots E0002 unchanged. No native game, competitive inference, performance benchmark, official data/agent/deck hashes or statistical intervals. User directs continued development; policy review in ledger, no official source admitted, no new dependency, no paid compute. CTR-1 full gate OPEN.
+
+## CTR-E0010 — verified native replay, 2026-11-24
+
+Parent 8330440e49bc7c8f222f0afc558082200368fcf4; code and evidence in same publication commit. Reviewed continuity/audit documents and permanent project instructions; nineteen baseline local source identities matched prior evidence. No parent workflow runs returned, no CI dispatched. Linux x86_64, GCC 14.2.0 (Debian 14.2.0-19), Clang 17.0.0 (10999b6d034fe318f3d56c83bddb6572593a8bb0), CMake 3.31.6, Python 3.13.5, Git 2.47.3. Exact changed/new source identities:
+
+| Path | Git blob | SHA-256 |
+| --- | --- | --- |
+| CMakeLists.txt | cb1849eead38f173173d23a546abd141a437c627 | 718ecd21f4293b4cd8501d459b4931e9699643916f96367889b2334ac32dce12 |
+| orchestration/verified_replay.py | f2874b2bdf82472b4720135d5fe04cbb37bc3b12 | db0b44a14a95862d137af84fe76767f30e1c949dfbb7fe4de5210ad1a54277e9 |
+| src/replay.cpp | 68aaf37d1afac680f5fc05d17ad1275c61fbb0f9 | 4e6782740c9d4a6af85908031a8db0fa67694b0e006ba7333d64c4662c74f739 |
+| tests/verified_replay_test.py | bdf77a5941144ae2cc30f4e4d2f32d6fe0e5fc67 | 0c82e1cddfb7b9c8758085816cfde74b928a20d7ec0bf402e535b69146830634 |
+
+Remaining eighteen source files unchanged from E0005..E0009. Require twenty-two exact source blob matches before updating main. Fresh builds: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD_TYPE=<Debug/Release>; cmake --build <build> --parallel 2; ctest --test-dir <build> --output-on-failure. Clang sanitizer Debug flags -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer; ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1. Combined build command timed out during Clang Debug compilation after three successful configurations; resumed separately, then sanitizer build and suite completed. No source/test failures.
+
+| Build | CTest passed | Wall time | ctr_replay executable SHA-256 |
+| --- | --- | --- | --- |
+| GCC Release | 11/11 | 2.57 s | 14f11030aa712e27864f88928f8cbcf7d2840b45379d90443086c17b070385e6 |
+| GCC Debug | 11/11 | 3.14 s | e3915fe5c325b65f77159a56f883e0e265ca69c39baa3a86d5d493960989af3f |
+| Clang Release | 11/11 | 2.53 s | 298f00eb3205a08944dfb8ec8eb29795a1eee10deb98b138f781a2e6b2a8e21d |
+| Clang Debug | 11/11 | 3.31 s | 5b0ad1ba06ec2a00198db853350193c951e8dc9d975fef4f852a3dd1bdc6486a |
+| Clang ASan/UBSan | 11/11 | 7.38 s | f5d7f330c73375149d21d6230d2b3c826ea6305e3812aeb0efb3c18696dd6c13 |
+
+55/55 CTest executions passed; no sanitizer diagnostic reported. New verified_replay test runs four unittest methods: three actual valid native replays (empty, one action, two actions) against independently constructed expected states; fourteen preflight rejections with mocked launch asserting no invocation; 65 truncated prefixes of a one-action 65-byte request, three trailing/oversize/count framing errors, four corrupt identity/state/action/final bytes, two native semantic rejections; four injected worker failure scenarios (wrong output, stderr, status 4, timeout), not actual crashes/timeouts. Valid and invalid native requests use actual compiled executable. Existing tests unchanged. No new RNG; prior core seed roots E0002. Counts repeat across builds, not independent statistical samples. No binaries published, native Riftbound games, card/agent/deck hashes, performance benchmark, uncertainty intervals, official game materials, historical input or paid compute. Full CTR-1 gate OPEN.

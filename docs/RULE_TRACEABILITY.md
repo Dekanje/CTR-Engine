@@ -72,3 +72,6 @@ Structural validity is not truth/authentication/freshness. Identity tag is not a
 
 ## Generic run identity contract (not a game rule)
 MAN-01: exact seven immutable byte roles, canonical v1 JSON containing lengths and SHA-256 hashes; 5040 input order permutations and known vector. MAN-02: verification requires trusted digest and exact canonical equality; 168 artifact bit mutations, 700 manifest mutations and invalid/noncanonical input tests. Evidence E0009, tests/manifest_test.py. No native execution, authorization or authentication guarantee.
+
+## Verified native replay infrastructure (not a game rule)
+REP-01: validate manifest, immutable role bytes, fixed compatibility markers, input sizes and trusted executable equality before launch; 14 preflight rejections assert no worker invocation. REP-02: EOF-framed request 61+4n bytes, n<=32, max 189; 65 truncated prefixes, three framing errors and four corrupted-field errors on real worker. REP-03: independently compare expected final bytes after validated native execution; three successful native replays, two semantic rejection examples, four mocked worker failures. Evidence CTR-E0010, tests/verified_replay_test.py. Linux-only, trusted local executable/environment, no official gameplay or security sandbox.

@@ -34,3 +34,6 @@ No approval evidence is in the ledger. Required next external input is a rights 
 
 ## E0009 update — run identity and policy review
 A generic SHA-256 canonical run manifest is implemented and tested; not yet connected to native replay. This partially addresses manifest infrastructure, not official rules or authentication. User directed continued development without a support ticket. Public policy review recorded in source ledger; no third-party clearance or legal determination inferred. CTR-1 remains open. Next reusable task is verified-byte native replay execution with bounded parsing; no new invented gameplay.
+
+## E0010 update — verified native replay
+Manifest-to-native execution binding is validated against the existing synthetic fixture on Linux. Exact artifact comparison, bounded framing and expected state checks improve generic reproducibility, but do not establish official rules, authenticated manifests or production security. Next generic hardening is observation/command freshness. Official authorization/source admission and all official behavioral acceptance evidence remain outstanding; CTR-1 OPEN.

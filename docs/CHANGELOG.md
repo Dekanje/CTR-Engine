@@ -43,3 +43,7 @@
 ## 2026-11-24 — CTR-1 run identity infrastructure
 - Added canonical seven-role SHA-256 manifest and trusted digest/exact artifact verification, with deterministic and mutation tests.
 - Final 50/50 CTest executions passed; E0009 recorded. No new gameplay or native replay binding. Public policy review recorded; user requested continued development. Full CTR-1 remains open.
+
+## 2026-11-24 — CTR-1 verified native replay
+- Added Linux-only bounded binary replay worker and Python exact verified-artifact execution binding using a trusted executable snapshot.
+- Added valid native replay and malformed/mismatch/failure tests; all five final configurations passed 55/55 CTest executions. E0010 records source and executable hashes. Full CTR-1 remains open.

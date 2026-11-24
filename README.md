@@ -14,3 +14,5 @@ Public content is limited to generic infrastructure and documentation. No card d
 CTR-1 boundary hardening and acceptance gap audit: see docs/CTR1_GATE_AUDIT.md and CTR-E0008. Official rules/authorization remain outstanding; no actual Riftbound game simulation.
 
 Generic run identity infrastructure (CTR-E0009): canonical SHA-256 manifests for exact engine/rules/content/schema and replay artifact bytes. Native execution binding remains outstanding.
+
+Verified native replay (CTR-E0010): Linux-only synthetic replay worker and exact manifest artifact binding. Official gameplay remains unimplemented.
