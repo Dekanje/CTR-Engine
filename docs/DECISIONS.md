@@ -16,3 +16,7 @@ D011: Establish versioned manual source admission ledger and synthetic traceabil
 
 D012: Use explicit, versioned immutable synthetic event tables rather than arbitrary callbacks for first resolution contract; ascending ID precedence and FIFO scheduling are synthetic conventions, not official rules.
 D013: Use bounded transactional value-returning resolution, exact repeated-event cycle detection for replacements, and finite event/queue budgets for trigger cascades. Reject on limit exhaustion, never truncate or commit partial results. Keep trace authoritative and in-memory until serialization/observation contract is defined.
+
+D014: Integrate prior synthetic state and effect fixtures with a fixed, public-state-derived payment program and pure value transitions. Modifier recomputation occurs before replacement, and full trigger cascade determines affordability. Both legal reveal paths deliberately normalize to final debit 2; no general continuous-effect claim.
+D015: Use explicit little-endian synthetic state encoding and bounded action replay; full-state bytes and authoritative trace are not agent-visible. Version 1 identifies immutable fixture behavior, not a production rules/content manifest.
+D016: Recover interrupted local subtask C files, rerun all five configurations and compare all eleven source blob identities before publishing. Keep CTR-1 open. Next generic subdivision D is a local engineering choice, not an approved phase change.

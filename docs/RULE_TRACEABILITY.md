@@ -23,3 +23,15 @@ Not a comprehensive secrecy proof: slot IDs/ownership/counts are structurally pu
 | SYN-E05 | Transaction returns state and complete trace only on success; no external mutation. | Input state unchanged on arithmetic cases and late triggered failure; empty transaction preserves state |
 
 No official semantics, independent of subtask A; no production replay/observation integration. Tests do not exhaust all possible programs or resource limit combinations.
+
+## Independent synthetic integration contract CTR-SYN-INTEGRATED v1
+
+| Rule ID | Specification | Test evidence (tests/integrated_test.cpp, CTest synthetic_integration) |
+| --- | --- | --- |
+| SYN-I01 | Authoritative state combines valid board and balances; observations include both public balances and viewer-specific board projection. Opponent private labels cannot influence offered actions. | 768 structural/resource combinations; 1,536 viewer projections with hidden-label perturbations and action equality |
+| SYN-I02 | Reveal uses pre-action cost 3 minus own public slot count. Replacement changes debit 3 to 2; applied debit 2 triggers credit 1 to other player. Both legal reveal paths cost 2. Pass is free. | 3,072 reveal candidates; exact independent allowed predicate and expected resulting state; replacement-count oracle; pass resource/trace checks |
+| SYN-I03 | Authority validates action, resolves entire payment including triggers, applies board transition only after success, and validates result. Reject insufficient balance or other player overflow atomically. | Candidate rejection and unchanged input checks; resource boundaries 0,1,2,3,99,100 for actor and 0,1,99,100 for other |
+| SYN-I04 | Canonical 26-byte state and four-byte action encodings, version 1, little-endian label. Invalid version/size, actor/target/kind, zone, passed flag and balances rejected. | 768 state round-trips; explicit byte-order and malformed examples |
+| SYN-I05 | Replay reconstructs final state by validated action application, max 32 actions; terminal or repeated illegal action rejected. | Single-action replay for allowed candidates, nine-action terminal fixture with expected balances 6/12, every prefix round-trip, terminal/repeated/oversize log rejection |
+
+This is original synthetic semantics. Cost normalization means final legal reveal price is constant despite different pre-replacement paths. No general continuous-effect system, explicit chance in this fixture, official combat/scoring or authenticated replay. Full-state bytes are authority-only; trusted observations do not constitute a security sandbox. Tests are selected finite combinations, not exhaustive state space.

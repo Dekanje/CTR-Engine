@@ -10,6 +10,7 @@ CTR-0.1: bootstrap gate satisfied against baseline v0.1. Implementation commit e
 | CTR-0.2 deterministic primitives and synthetic replay | Baseline gate satisfied; 15/15 CTest executions in five configurations, exact source verification (CTR-E0002) |
 | CTR-1 generic kernel subtask A | Validated and published: synthetic state/action/priority/observation contracts; manual rights ledger and traceability (CTR-E0003) |
 | CTR-1 generic subtask B | Validated: bounded transactional event resolution, replacement and trigger ordering (CTR-E0004) |
+| CTR-1 generic subtask C | Validated: synthetic state/action/effect integration, zone-derived modifier and replay (CTR-E0005) |
 | Rules kernel / format legality | CTR-1 in progress; official semantics not implemented |
 | Card and legend behavior | Zero verified |
 | Gameplay agents and BO3 | Not implemented |
@@ -23,4 +24,6 @@ CTR-1 subtask A implementation ae649d188d792a6a3e14dd61842b59e895d8417b; 20/20 C
 
 CTR-1 subtask B implementation 3aac314886d83cdb4b159e84d097a58f10847cd8: 25/25 final CTest executions in five local configurations; all nine tested source blob identities matched candidate commit before main advanced. Full CTR-1 gate remains open. See CTR-E0004.
 
-Next verified unfinished work within CTR-1: generic resource/zone invariants, continuous modifier evaluation and integration of the synthetic action, effect and replay contracts (subtask C). Preserve observation boundaries and atomic rejection. Official source admission and rule-derived behavior remain blocked by authorization. Do not advance CTR-2. Subtask labels are local engineering subdivisions; reconcile canonical detailed master plan if available. No historical project evidence applies.
+CTR-1 subtask C implementation ee53d3104c5621772907209c93a3500ff56cf78c: recovered interrupted local implementation, reviewed source, reran 30/30 CTest executions across five configurations and verified all eleven tested source identities on GitHub. See CTR-E0005. Synthetic rules only; full CTR-1 gate remains OPEN.
+
+Next within CTR-1: generic subtask D, independently specified combat-like simultaneous conflict and scoring/terminal resolution, with invariant and replay tests. Keep it clearly distinct from official game mechanics. Prioritize resolution of authorization and versioned official rules provenance before further game-specific work; neither is established. Do not advance to CTR-2 until all CTR-1 criteria are met. Subtask labels are engineering subdivisions, not new approved gates; reconcile canonical detailed master plan if available. No historical project evidence applies.

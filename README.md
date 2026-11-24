@@ -2,7 +2,7 @@
 
 Independent native simulation research infrastructure. New implementation, not a fork, rename or continuation of another engine. No AlphaRune dependencies or imported implementation.
 
-Status: CTR-0.1 and CTR-0.2 baseline gates satisfied; CTR-1 generic subtasks A and B validated (synthetic state/action/priority/observation and bounded event/effect resolution contracts). Full CTR-1 gate open; not a Riftbound rules engine. See docs/RULE_SOURCE_LEDGER.md and docs/RULE_TRACEABILITY.md. See MASTER_PLAN.md, DEVELOPMENT_STATUS.md and docs/HANDOVER.md.
+Status: CTR-0.1 and CTR-0.2 baseline gates satisfied; CTR-1 generic subtasks A–C validated (synthetic state/action/priority/observation, bounded effect resolution, and integrated resource/action replay contracts). Full CTR-1 gate open; not a Riftbound rules engine. See docs/RULE_SOURCE_LEDGER.md and docs/RULE_TRACEABILITY.md. See MASTER_PLAN.md, DEVELOPMENT_STATUS.md and docs/HANDOVER.md.
 
 Build and test (CMake >= 3.20, C++20 compiler, Python >= 3.10):
     cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
