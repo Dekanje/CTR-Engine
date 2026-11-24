@@ -69,3 +69,6 @@ Bounded fixture/general utility, not official semantics. Separate variable-payme
 | SYN-V03 | Authority-only replay envelope requires exact fixture identity and equal reconstructed final state, retaining existing bounded replay. | Valid one-action envelope, eight identity mutations, wrong final state, missing action, oversized log and malformed final encoding |
 
 Structural validity is not truth/authentication/freshness. Identity tag is not a hash. No new official rules or general security proof.
+
+## Generic run identity contract (not a game rule)
+MAN-01: exact seven immutable byte roles, canonical v1 JSON containing lengths and SHA-256 hashes; 5040 input order permutations and known vector. MAN-02: verification requires trusted digest and exact canonical equality; 168 artifact bit mutations, 700 manifest mutations and invalid/noncanonical input tests. Evidence E0009, tests/manifest_test.py. No native execution, authorization or authentication guarantee.

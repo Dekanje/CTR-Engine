@@ -213,3 +213,25 @@ Remaining twelve source files retain E0005..E0007 identities. Require seventeen 
 | Clang ASan/UBSan | 9/9 | 5.16 s |
 
 45/45 CTest executions passed, no compilation/test failure or sanitizer diagnostics. All five direct outputs: boundary-v1:64 projections:752 mutations. New test: 16 masks x 2 viewers x 2 priority holders, 11 mandatory mutations each plus 48 opponent-public-to-private mutations, 64 invalid resource and 64 wrong-actor payment cases, replay identity byte mutations and final-state/missing-action/oversize/malformed rejection. Existing regressions including replay passed. No new RNG; prior seeds as E0002. Repeated build counts not independent samples. No benchmark, native games, card/agent/deck hashes, statistical intervals, official materials, historical inputs or paid compute. Gap audit CTR1_GATE_AUDIT.md explicitly leaves official gate open. Structural validation and tag comparison are not authentication.
+
+## CTR-E0009 — canonical run manifest, 2026-11-24
+
+Parent aba84cb17014c444e8b4200e6a213cf663757c34; code and evidence in same publication commit. Repository and thirteen continuity/audit documents reviewed; seventeen prior local source identities verified against recorded E0005..E0008. No parent workflow runs returned; no CI dispatched. Linux x86_64, GCC 14.2.0 (Debian 14.2.0-19), Clang 17.0.0 (10999b6d034fe318f3d56c83bddb6572593a8bb0), CMake 3.31.6, Python 3.13.5. Changed/new exact source identities:
+
+| Path | Git blob | SHA-256 |
+| --- | --- | --- |
+| CMakeLists.txt | 5d196fb43a590e36dcf206acb539f38c06846c47 | c2c1511bd4005bcd575ee9f9d54f11225548d5708c182b99d37fe090a65df1e5 |
+| orchestration/run_manifest.py | 6ce7117b1247a0fd752ba0f010085cc6d7136929 | f41be3671364c73a55a358b773d5b374551190482b87d527fcf0ea73d5069c66 |
+| tests/manifest_test.py | d62728b18bf816fa26f93b96169ed581dbebf32c | 8b1a4ac13528295f6ee32d7bed5b88ab2c56f29a57c384aebb518cdefe20cc9f |
+
+Remaining sixteen source files unchanged from E0005..E0008. Nineteen exact source blob matches required before updating main. Direct python3 tests/manifest_test.py: 4 unittest methods passed (0.062 s). Fresh builds: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD_TYPE=<Debug/Release>; cmake --build <build> --parallel 2; ctest --test-dir <build> --output-on-failure. Clang sanitizer Debug flags -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer; ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1. Streaming invocation unsupported; normal combined command timed out after two successful GCC suites. Clang Release resumed and Clang Debug/sanitizer completed in separate calls.
+
+| Build | CTest passed | Wall time |
+| --- | --- | --- |
+| GCC Release | 10/10 | 1.73 s |
+| GCC Debug | 10/10 | 2.07 s |
+| Clang Release | 10/10 | 1.77 s |
+| Clang Debug | 10/10 | 2.54 s |
+| Clang ASan/UBSan | 10/10 | 6.09 s |
+
+50/50 final CTest executions passed, no code/test failures or sanitizer diagnostics. Python manifest suite repeated under the same interpreter (not independent compiler validation of Python). Each checks known SHA-256 vector, structure, 7! = 5040 registration permutations, 168 single-bit artifact mutations, 700 manifest-byte mutations, missing/extra roles, changed sizes, mutable artifact rejection, malformed/noncanonical manifest even when rehashed, invalid trusted digest and regenerated altered artifacts. Fixture manifest length 700; separately computed SHA-256 4ec95a621314e00a35536418c8a842f8aec06a1eb850d4ea03ebc76fbb532d8c. No new RNG, prior seed roots E0002 unchanged. No native game, competitive inference, performance benchmark, official data/agent/deck hashes or statistical intervals. User directs continued development; policy review in ledger, no official source admitted, no new dependency, no paid compute. CTR-1 full gate OPEN.

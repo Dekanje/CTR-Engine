@@ -39,3 +39,7 @@
 - Added canonical projection validation, direct payment action checks, fixture replay identity and expected final-state verification.
 - All five fresh builds passed 45/45 CTest executions; CTR-E0008 and SYN-V01..03 recorded.
 - Added CTR1_GATE_AUDIT.md with official acceptance gaps, source authorization checkpoint and production integration sequence. CTR-1 remains open; no official source admission.
+
+## 2026-11-24 — CTR-1 run identity infrastructure
+- Added canonical seven-role SHA-256 manifest and trusted digest/exact artifact verification, with deterministic and mutation tests.
+- Final 50/50 CTest executions passed; E0009 recorded. No new gameplay or native replay binding. Public policy review recorded; user requested continued development. Full CTR-1 remains open.

@@ -31,3 +31,6 @@ No official rule behavior or card identity is verified. No native Riftbound game
 ## Authorization checkpoint
 
 No approval evidence is in the ledger. Required next external input is a rights determination covering the intended independent offline research implementation, source acquisition/processing, publication/distribution and any automated play activity. Obtain appropriate authorization or legal clarification from the relevant rights holder or qualified review, then record scope in the ledger. No request has been sent and no permission asserted. Do not expand arbitrary gameplay fixtures merely to report progress. Generic hardening may proceed only when independently useful and within CTR-1; the current audit is a stop condition for claims of game-specific readiness.
+
+## E0009 update — run identity and policy review
+A generic SHA-256 canonical run manifest is implemented and tested; not yet connected to native replay. This partially addresses manifest infrastructure, not official rules or authentication. User directed continued development without a support ticket. Public policy review recorded in source ledger; no third-party clearance or legal determination inferred. CTR-1 remains open. Next reusable task is verified-byte native replay execution with bounded parsing; no new invented gameplay.

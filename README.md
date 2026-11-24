@@ -12,3 +12,5 @@ Build and test (CMake >= 3.20, C++20 compiler, Python >= 3.10):
 Public content is limited to generic infrastructure and documentation. No card data, private deck research, historical rankings or simulation evidence from other projects. No license grant is specified; distribution/reuse terms require an explicit owner decision.
 
 CTR-1 boundary hardening and acceptance gap audit: see docs/CTR1_GATE_AUDIT.md and CTR-E0008. Official rules/authorization remain outstanding; no actual Riftbound game simulation.
+
+Generic run identity infrastructure (CTR-E0009): canonical SHA-256 manifests for exact engine/rules/content/schema and replay artifact bytes. Native execution binding remains outstanding.

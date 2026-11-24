@@ -21,3 +21,6 @@ Before admitting a game-specific source, record its immutable version, precise l
 AlphaRune is excluded; historical RB-Analyser implementation/evidence is not a source. Do not import either. Game-specific CTR-1 acceptance requires admitted sources and rule-to-test evidence; generic test success cannot substitute.
 
 CTR-1 gap audit: see docs/CTR1_GATE_AUDIT.md for outstanding evidence, proposed production integration and authorization checkpoint. No official source admitted or permission request sent.
+
+## Policy review — 2026-11-24
+Reviewed public Riot Developer Portal pages https://developer.riotgames.com/docs/riftbound and https://developer.riotgames.com/policies/riftbound for governance context only. They describe licensing/API-key requirements for apps and restrictions on automated rules enforcement and metagame-data retention. Applicability to the intended strictly offline private research engine is unresolved; this is not legal advice, permission or an admission of gameplay/card data. User directs continued development without support-ticket prerequisite. No rights-holder permission asserted; no ticket submitted. Existing RB-RULES/RB-CONTENT/RB-FORMATS/RB-AUTOMATION statuses unchanged. No policy text or game assets copied into implementation.

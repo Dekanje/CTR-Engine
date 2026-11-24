@@ -19,3 +19,5 @@ CTR-1 subtask D: original include/ctr/conflict.hpp and tests/conflict_test.cpp; 
 CTR-1 subtask E: original include/ctr/modifiers.hpp and tests/modifier_test.cpp; effects.hpp, integrated.hpp and CMakeLists.txt extended. Uses existing original CTR code and standard C++ only. No new external dependencies, official game materials, AlphaRune or historical repository inputs. Evidence CTR-E0007; authorization unresolved.
 
 CTR-E0008: original include/ctr/replay_contract.hpp and tests/boundary_test.cpp; extended kernel.hpp, integrated.hpp and CMakeLists.txt. Uses only original CTR and C++ standard library. Gap audit derived from repository requirements/evidence, not official game materials. No new dependencies, AlphaRune or historical input; rights unresolved.
+
+CTR-E0009: original orchestration/run_manifest.py and tests/manifest_test.py, CMakeLists.txt extended. Python standard-library hashlib, hmac, json and test utilities only; no external dependencies or game materials. Public Riot policy URLs reviewed for governance only (ledger). No historical or AlphaRune input. No third-party clearance asserted.

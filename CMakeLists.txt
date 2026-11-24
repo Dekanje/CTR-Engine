@@ -114,3 +114,8 @@ if(BUILD_TESTING)
   add_test(NAME validated_boundaries COMMAND ctr_boundary_test)
   set_tests_properties(validated_boundaries PROPERTIES TIMEOUT 30)
 endif()
+
+if(BUILD_TESTING)
+  add_test(NAME run_manifest COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/tests/manifest_test.py)
+  set_tests_properties(run_manifest PROPERTIES TIMEOUT 15)
+endif()

@@ -14,6 +14,7 @@ CTR-0.1: bootstrap gate satisfied against baseline v0.1. Implementation commit e
 | CTR-1 generic subtask D | Validated standalone simultaneous conflict, scoring and terminal replay (CTR-E0006) |
 | CTR-1 generic subtask E | Validated: bounded continuous modifiers and distinct resource/action rejection (CTR-E0007) |
 | CTR-1 boundary hardening and gap audit | Validated synthetic projection structure and replay identity/final-state checks (CTR-E0008); official gaps documented |
+| CTR-1 run identity infrastructure | Validated canonical SHA-256 manifest and exact artifact verification (CTR-E0009) |
 | Rules kernel / format legality | CTR-1 in progress; official semantics not implemented |
 | Card and legend behavior | Zero verified |
 | Gameplay agents and BO3 | Not implemented |
@@ -35,4 +36,6 @@ CTR-1 subtask E: 40/40 CTest executions across five local build configurations. 
 
 CTR-E0008: 45/45 CTest executions across five local configurations; all seventeen tested source identities require matching before publication. Structural observation validation and direct payment action checks, replay envelope identity and expected final state verification. See docs/CTR1_GATE_AUDIT.md. No full CTR-1 acceptance.
 
-Next: official source/authorization admission is the critical path. The gate audit and proposed production integration sequence are now recorded. No official materials or permission evidence admitted. Obtain scoped authorization or legal clarification and versioned source provenance before game-specific implementation. Do not invent more gameplay as a substitute; generic work only if independently useful (production manifest/digest integration, contextual errors and freshness/security remain open). Do not advance CTR-2. Reconcile canonical detailed master plan if available.
+CTR-E0009: 50/50 final CTest executions across five local configurations; canonical SHA-256 run manifest for seven artifact roles and trusted digest comparison. No gameplay changes. User directed continued development without a support ticket; this is development authorization, not evidence of third-party permission. Public Riot policy reviewed on 2026-11-24; no official game source admitted. CTR-1 remains open.
+
+Next: connect verified artifact bytes to native replay execution with strict bounded parsing, immutable snapshots and explicit failure reporting. This is reusable infrastructure, not a new gameplay fixture. The official-source admission and rule-derived validation requirements remain outstanding; no CTR-2 advancement. Prioritize independently justified work, not more invented mechanics. Reconcile detailed canonical master plan if available.
