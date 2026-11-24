@@ -7,3 +7,8 @@
 - No game rules, card data, historical implementation, simulations or CI workflows imported or executed.
 
 - Verified published source identities and continuity records at e5cb2c73e654db5945cf02f906adc297f296659b; recorded baseline CTR-0.1 acceptance.
+
+## 2026-11-24 — CTR-0.2
+- Added original deterministic primitives, canonical synthetic state/event encoding, explicit chance and replay, and exhaustive finite-domain and seeded tests.
+- Recovered interrupted local work; reran five build configurations including ASan/UBSan, 15/15 CTest executions passed and fingerprints matched.
+- Published implementation a3a572e407e9ab7840da891e46ed33dd545f5fea after matching all five tested source blobs; baseline gate satisfied. No game-specific code, historical imports or paid compute.

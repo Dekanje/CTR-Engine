@@ -12,3 +12,6 @@ Proposed module boundaries:
 - orchestration: Python workers, versioned manifests, atomic checkpoints, resource limits and reporting.
 
 Native workers and Python communicate via versioned contracts; benchmark before committing to a binding or storage technology. The current executable is only a synthetic process probe, not a production protocol. OpenSpiel is optional and replaceable after license review; PyTorch/storage choices require justification. No external dependency is currently integrated. Future-set extension requires versioned legality, effect semantics and regression coverage.
+
+## CTR-0.2 validated foundation
+Header-only C++20 generic tagged IDs, explicitly domain-separated mt19937_64 streams seeded using seed_seq(root low/high, domain, run low/high), and rejection sampling for uniform full-width inputs. Version-1 synthetic fixture: three-byte state [version,value,pending] and event [version,kind,payload]. Explicit request/outcome events; validated pure value transitions; replay consumes encoded events without RNG. Prefixes may end pending. These are demonstrator schemas, not game-specific rules or production serialization. No weighted chance or RNG checkpointing yet. Future kernel must separate full state from agent observations and trace every implemented rule to authorized versioned sources and independent tests.

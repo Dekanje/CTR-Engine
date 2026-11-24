@@ -1,11 +1,11 @@
-# Handover — session 001, 2026-11-24
+# Handover — CTR-0.2, 2026-11-24
 
-The verified new repository was empty before this session. Identity commit 8a8c60a6bd4ea204739f76a1f44ad25ce758b8fe. Bootstrap adds original C++20/Python probe and continuity documents. No earlier project was accessed. Local GCC and Clang Debug/Release builds passed all CTest executions; see EVIDENCE_INDEX.md for source blob IDs and timings. No CI results or games exist. Implementation commit e5cb2c73e654db5945cf02f906adc297f296659b was verified on main; all three tested source blob IDs matched and all ten continuity documents were fetched. CTR-0.1 baseline gate satisfied.
+Prior verified HEAD ae64ed534d8f3b601fac594e6fb7c78382cade4c. Repository ID 1470873291, main, public, push permission verified. Ten continuity files read. The interrupted local CTR-0.2 implementation survived; reviewed and reran all five configurations before publishing. Implementation commit a3a572e407e9ab7840da891e46ed33dd545f5fea. All five source blob IDs matched the locally tested files. See CTR-E0002 in EVIDENCE_INDEX.md. CTR-0.1 and CTR-0.2 baseline gates satisfied. No game-specific results, CI dispatch, additional paid infrastructure, AlphaRune or historical repository inputs.
 
-Resume procedure:
-1. Verify main HEAD, commit history and bootstrap files against recorded source blob IDs; inspect CI if present. Rerun local build/test if feasible.
-2. CTR-0.1 baseline gate was satisfied in session 001. Verify evidence remains applicable; reconcile canonical master plan if available.
-3. Next proposed task CTR-0.2: design and test generic deterministic state/replay primitives, stable chance/seed contracts and input rejection. Begin with independently derived synthetic fixtures, not game materials. Keep new work isolated and document exact source hashes and validation.
-4. Before any game-specific data or restricted activity, establish authorized specification and rights; before intensive compute, verify resource availability and zero additional cost.
+Resume:
+1. Verify main head, commit history, source hashes and continuity records; rerun relevant tests.
+2. Reconcile canonical detailed master plan if available; subsequent gate IDs remain provisional.
+3. Next verified unfinished gate CTR-1: establish versioned rights/source ledger, rule-to-test traceability, and generic state/action/zone/priority/observation contracts with independent synthetic fixtures. Game-specific implementation remains blocked until authorized specification is established. Do not mark CTR-1 complete from generic fixtures.
+4. Design rules and data interfaces to fail closed; no private competitive data in public repo. Record exact source identities, tests, errors, limitations and decisions. Verify quota before any CI dispatch; use zero additional cloud expenditure.
 
-Do not assume any rules coverage, game results, agent strength, or phase completion from the old project. Update all continuity documents at the next milestone.
+The generic RNG and synthetic replay contracts are in include/ctr/core.hpp and tests/core_test.cpp. No native Riftbound games or verified card behavior yet.

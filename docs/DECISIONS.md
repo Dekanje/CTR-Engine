@@ -5,3 +5,7 @@ D002: Implement generic feasibility probe using C++20/CMake/CTest/Python standar
 D003: Use local ephemeral builds with GCC/Clang, Debug/Release, warnings as errors; no CI dispatch or paid compute. CI policy deferred pending quota verification.
 D004: Master plan baseline derives from approved architecture; subsequent gate numbering is provisional until the separate canonical plan is available.
 D005: Keep public repository limited to generic infrastructure; rights for card materials and distribution license unresolved. No visibility changes.
+
+D006: CTR-0.2 uses standard C++ mt19937_64/seed_seq with explicit stream domains and fixed word ordering; bounded sampling uses unsigned rejection threshold rather than std::uniform_int_distribution. No external dependencies.
+D007: Use synthetic counter fixture with request/outcome separation and canonical three-byte encodings; do not promote this schema to game rules. Replay is deterministic event application, not seed-dependent re-simulation.
+D008: Recover interrupted local source and rerun complete five-build matrix before publication. Verify all five Git blob identities before moving main. Gate acceptance limited to baseline CTR-0.2, not official game semantics.
