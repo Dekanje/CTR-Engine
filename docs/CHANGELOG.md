@@ -25,3 +25,7 @@
 ## 2026-11-24 — CTR-1 generic subtask C
 - Integrated synthetic board/resource state, observation-derived cost, effect payment, canonical state/action encoding and bounded replay.
 - Recovered interrupted implementation; reran all five configurations, 30/30 CTest executions passed. Matched eleven tested source blobs before publishing ee53d3104c5621772907209c93a3500ff56cf78c. Added CTR-E0005 and SYN-I01..05. Full CTR-1 gate open.
+
+## 2026-11-24 — CTR-1 generic subtask D
+- Added standalone simultaneous conflict, survival/removal, score invariant, terminal outcomes and bounded replay fixture.
+- Fixed initial std::apply collision; all five final builds passed 35/35 CTest executions. Recorded CTR-E0006 and SYN-D01..05. No official game rules or full CTR-1 acceptance.

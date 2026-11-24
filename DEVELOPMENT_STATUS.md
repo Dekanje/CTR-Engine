@@ -11,6 +11,7 @@ CTR-0.1: bootstrap gate satisfied against baseline v0.1. Implementation commit e
 | CTR-1 generic kernel subtask A | Validated and published: synthetic state/action/priority/observation contracts; manual rights ledger and traceability (CTR-E0003) |
 | CTR-1 generic subtask B | Validated: bounded transactional event resolution, replacement and trigger ordering (CTR-E0004) |
 | CTR-1 generic subtask C | Validated: synthetic state/action/effect integration, zone-derived modifier and replay (CTR-E0005) |
+| CTR-1 generic subtask D | Validated standalone simultaneous conflict, scoring and terminal replay (CTR-E0006) |
 | Rules kernel / format legality | CTR-1 in progress; official semantics not implemented |
 | Card and legend behavior | Zero verified |
 | Gameplay agents and BO3 | Not implemented |
@@ -26,4 +27,6 @@ CTR-1 subtask B implementation 3aac314886d83cdb4b159e84d097a58f10847cd8: 25/25 f
 
 CTR-1 subtask C implementation ee53d3104c5621772907209c93a3500ff56cf78c: recovered interrupted local implementation, reviewed source, reran 30/30 CTest executions across five configurations and verified all eleven tested source identities on GitHub. See CTR-E0005. Synthetic rules only; full CTR-1 gate remains OPEN.
 
-Next within CTR-1: generic subtask D, independently specified combat-like simultaneous conflict and scoring/terminal resolution, with invariant and replay tests. Keep it clearly distinct from official game mechanics. Prioritize resolution of authorization and versioned official rules provenance before further game-specific work; neither is established. Do not advance to CTR-2 until all CTR-1 criteria are met. Subtask labels are engineering subdivisions, not new approved gates; reconcile canonical detailed master plan if available. No historical project evidence applies.
+CTR-1 subtask D: 35/35 final CTest executions, five configurations; 1,171,875 order candidates and 48,128 legal transitions per conflict test. Evidence CTR-E0006, identified by exact source blobs and the commit containing that record. Standalone synthetic fixture, not integrated with subtask C. Full CTR-1 gate remains OPEN.
+
+Next within CTR-1: prioritize official-source/authorization admission; this is the substantive blocker for actual Riftbound implementation. Independently useful generic subtask E: separate legality failures from engine/configuration errors in the existing integration, and design/test a data-driven continuous modifier contract with actual final-value changes and explicit ordering. Do not expand arbitrary fixture semantics into purported game rules. Integration of simultaneous conflict with existing action/effect/observation contracts remains outstanding. Do not advance CTR-2 before full CTR-1 acceptance. Subtask E is a local engineering subdivision; reconcile canonical detailed master plan if available.

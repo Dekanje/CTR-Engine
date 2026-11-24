@@ -35,3 +35,15 @@ No official semantics, independent of subtask A; no production replay/observatio
 | SYN-I05 | Replay reconstructs final state by validated action application, max 32 actions; terminal or repeated illegal action rejected. | Single-action replay for allowed candidates, nine-action terminal fixture with expected balances 6/12, every prefix round-trip, terminal/repeated/oversize log rejection |
 
 This is original synthetic semantics. Cost normalization means final legal reveal price is constant despite different pre-replacement paths. No general continuous-effect system, explicit chance in this fixture, official combat/scoring or authenticated replay. Full-state bytes are authority-only; trusted observations do not constitute a security sandbox. Tests are selected finite combinations, not exhaustive state space.
+
+## Independent synthetic conflict contract CTR-SYN-CONFLICT v1
+
+| Rule ID | Specification | Test evidence (tests/conflict_test.cpp, CTest synthetic_conflict) |
+| --- | --- | --- |
+| SYN-D01 | Four fixed units, two per side; alive HP/power 1..3, removed (0,0). Score equals opposing removed-slot count; rounds 0..4. | 1,875 structural state round-trips (five unit variants x four slots as Cartesian power, three round values); invalid score/unit/version examples |
+| SYN-D02 | One order per slot, opposing live target 0..3 or idle 4; no actions at terminal. Validate all orders before mutation. | 1,171,875 order candidates against independent predicate, including friendly, dead and terminal targets; explicit out-of-range and invalid transition rejection |
+| SYN-D03 | All damage uses pre-round power; aggregate per target, remove once at zero HP, increment score per defeated unit. | 48,128 legal transitions against independent per-target subtraction and score recount oracle; input equality, invariants, simultaneous mutual elimination and focus-fire examples |
+| SYN-D04 | End after round four or either side eliminated; compare scores, ties draw. | Expected outcome checked for each accepted transition, explicit first/second victory, mutual elimination and four-idle-round draw |
+| SYN-D05 | Version-1 state bytes (12) and order bytes (5); replay at most four batches, rejecting malformed and post-terminal logs. | Single-batch replay for each accepted transition, multi-batch terminal fixture, malformed order/version/length and oversized/post-terminal rejection |
+
+Finite domain is HP/power 1..2 plus removed for exhaustive candidate enumeration, round values 0,3,4; HP/power 3 covered by explicit cases. Not a full-state exhaustive proof. Standalone fixture with no official game semantics, hidden choices, effects, or integration with prior kernel.

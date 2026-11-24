@@ -139,3 +139,27 @@ Fresh rerun: cmake --build <existing-build> --parallel 2; ASAN_OPTIONS=detect_le
 | Clang ASan/UBSan | 6/6 | 4.61 s |
 
 30/30 fresh CTest executions passed; no sanitizer diagnostics reported. All five direct integration outputs: integrated-v1:3072 candidates:1536 projections. Each checks 16 masks x 2 priority holders x 6 own balances x 4 other balances = 768 combinations, 4 reveal targets each, both viewer projections with hidden-label perturbation, pass checks, resource/zone state and replay checks, fixed nine-action terminal trace and malformed input examples. Counts repeat across configurations; no new RNG used. Previous core RNG seeds as in E0002. No native game/deck/agent hashes, actual games or statistical intervals; timings are test timings. No paid cloud or game material imports. Subtask C generic integration validated only; CTR-1 full acceptance NOT satisfied.
+
+## CTR-E0006 — CTR-1 generic subtask D, 2026-11-24
+
+Parent 66844d4cba872a1b82b9d88dd90bb4c87fe44e05; implementation and evidence reside in the same publication commit. Reviewed twelve continuity/source documents and permanent project instructions; eleven prior local source identities match CTR-E0005. No workflow runs returned for parent; no CI dispatched. Local Linux x86_64. Exact source identities computed after final tests:
+
+| Path | Git blob | SHA-256 |
+| --- | --- | --- |
+| CMakeLists.txt | b6c6089c7548057d891f88fa4b4b694e82777fa8 | 7c62464b97eac13e9aff3a9ccd2688d1b785f1bb34ff11bf2193f09f9cbca08a |
+| include/ctr/conflict.hpp | 6dd88bccd4d4cf37cf65e00cc9b3e02c7a8f73c9 | 81ca53c41d43ea7f03954ed29afc199a93358cde99b649742c9a809df07a3508 |
+| tests/conflict_test.cpp | b4e30168f73e11c52c77fe128d04687f3692d691 | c4e4dfc9c8e6ac1f1af76e9821e27c59a4376b83408b97e7b0310e26458376d2 |
+
+The remaining ten source files retain their exact identities listed in CTR-E0005 (everything except CMakeLists.txt). Publication requires all thirteen identities match candidate tree before moving main.
+
+Commands: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD_TYPE=<Debug/Release>; cmake --build <build> --parallel 2; ctest --test-dir <build> --output-on-failure; direct ctr_conflict_test. Clang sanitizer Debug uses -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer; ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1. Initial GCC Release compilation failed due to std::apply ADL collision; renamed to resolve_round in header/test and reran. A streaming shell invocation was unsupported; normal shell calls succeeded.
+
+| Build | CTest passed | Wall time |
+| --- | --- | --- |
+| GCC Release | 7/7 | 1.01 s |
+| GCC Debug | 7/7 | 1.49 s |
+| Clang Debug | 7/7 | 1.77 s |
+| Clang Release | 7/7 | 1.08 s |
+| Clang ASan/UBSan | 7/7 | 5.17 s |
+
+35/35 final CTest executions passed, zero final failures and no sanitizer diagnostics. Direct output identical across five configurations: conflict-v1:1171875 candidates:48128 accepted. Per configuration: 5^4 x 3 = 1,875 state round-trips; 5^4 order vectors per state = 1,171,875 candidate checks, 48,128 accepted transitions with independent arithmetic/outcome oracle, unchanged input and replay. Explicit malformed/negative and terminal scenarios. New fixture deterministic, no RNG; prior core seeds unchanged from E0002. Counts repeat across builds, not independent statistical samples. No actual game/deck/agent hashes, native matches, uncertainty intervals or performance benchmark. No official source admission, paid compute or historical input. Subtask D synthetic validation only; full CTR-1 acceptance not satisfied.
