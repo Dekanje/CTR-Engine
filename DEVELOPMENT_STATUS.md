@@ -13,6 +13,7 @@ CTR-0.1: bootstrap gate satisfied against baseline v0.1. Implementation commit e
 | CTR-1 generic subtask C | Validated: synthetic state/action/effect integration, zone-derived modifier and replay (CTR-E0005) |
 | CTR-1 generic subtask D | Validated standalone simultaneous conflict, scoring and terminal replay (CTR-E0006) |
 | CTR-1 generic subtask E | Validated: bounded continuous modifiers and distinct resource/action rejection (CTR-E0007) |
+| CTR-1 boundary hardening and gap audit | Validated synthetic projection structure and replay identity/final-state checks (CTR-E0008); official gaps documented |
 | Rules kernel / format legality | CTR-1 in progress; official semantics not implemented |
 | Card and legend behavior | Zero verified |
 | Gameplay agents and BO3 | Not implemented |
@@ -32,4 +33,6 @@ CTR-1 subtask D: 35/35 final CTest executions, five configurations; 1,171,875 or
 
 CTR-1 subtask E: 40/40 CTest executions across five local build configurations. Generic modifier evaluator integrated into existing v1 cost computation; v1 behavior unchanged on regression fixtures. Separate variable-payment fixture demonstrates final-value changes with replacements and triggers. Action enumeration catches only ResourceViolation; configuration and engine failures propagate. See CTR-E0007, exact source identities, and the commit containing the record. Full CTR-1 gate remains OPEN.
 
-Next: CTR-1 authorized source admission is the critical path. No official source or authorization evidence is recorded. Complete source/rights review before game-specific implementation. While blocked, limit generic development to reusable validation and infrastructure, not new invented gameplay. Specifically, audit all CTR-1 requirements against the existing contracts, strengthen replay identity and observation validation/error classification, and define a production integration plan without assuming rule semantics. No CTR-2 advancement until the official rule-derived gate is satisfied. Subtasks are engineering subdivisions, not new approved gates.
+CTR-E0008: 45/45 CTest executions across five local configurations; all seventeen tested source identities require matching before publication. Structural observation validation and direct payment action checks, replay envelope identity and expected final state verification. See docs/CTR1_GATE_AUDIT.md. No full CTR-1 acceptance.
+
+Next: official source/authorization admission is the critical path. The gate audit and proposed production integration sequence are now recorded. No official materials or permission evidence admitted. Obtain scoped authorization or legal clarification and versioned source provenance before game-specific implementation. Do not invent more gameplay as a substitute; generic work only if independently useful (production manifest/digest integration, contextual errors and freshness/security remain open). Do not advance CTR-2. Reconcile canonical detailed master plan if available.

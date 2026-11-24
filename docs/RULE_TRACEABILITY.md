@@ -59,3 +59,13 @@ Finite domain is HP/power 1..2 plus removed for exhaustive candidate enumeration
 | SYN-M05 | Existing v1 payment semantics retained: public-slot mask drives equivalent cost calculation, fixed replacement/trigger program unchanged. | Full synthetic_integration regression, 3,072 reveal candidates, 1,536 projection perturbations and existing replay fixtures across all builds |
 
 Bounded fixture/general utility, not official semantics. Separate variable-payment case is not the v1 integrated game; no dynamic dependency graph or complete observation validation. ResourceViolation does not yet distinguish expected unaffordability from a resource failure caused by arbitrary faulty rules.
+
+## CTR-SYN-BOUNDARY v1 (hardening of existing contracts)
+
+| Rule ID | Specification | Test evidence (tests/boundary_test.cpp, CTest validated_boundaries) |
+| --- | --- | --- |
+| SYN-V01 | Canonical projection validates viewer, priority, turn, terminal flags, unique ascending slot IDs, ownership, visibility and private counts; own slots must be present. Reject malformed projection even when not acting. | 64 genuine projections and 752 malformed projection mutations, including opponent private objects; existing kernel/integration regression |
+| SYN-V02 | Payment requires valid resources and candidate membership, including pass. | 64 invalid balance and 64 wrong-actor payment cases; existing modifier and resource regressions |
+| SYN-V03 | Authority-only replay envelope requires exact fixture identity and equal reconstructed final state, retaining existing bounded replay. | Valid one-action envelope, eight identity mutations, wrong final state, missing action, oversized log and malformed final encoding |
+
+Structural validity is not truth/authentication/freshness. Identity tag is not a hash. No new official rules or general security proof.

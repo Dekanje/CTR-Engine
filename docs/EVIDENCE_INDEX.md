@@ -189,3 +189,27 @@ Commands: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD
 | Clang ASan/UBSan | 8/8 | 5.12 s |
 
 40/40 CTest executions passed; no sanitizer diagnostics. All five direct outputs identical: modifiers-v1:7680 ordered cases. Each new test checks 4! registration permutations x 16 masks x 20 base values against independent ordered arithmetic, multi-mask and boundary examples, 11 invalid modifier input examples, separate inactive/active/inactive payment with distinct final balances, resource/illegal-action versus configuration failure checks including malformed observation propagation. Existing integration/replay/conflict regressions passed unchanged. No new RNG; prior seeds as E0002. Repeated configurations not independent stochastic samples. No native Riftbound games, card/agent/deck hashes, competitive estimates, statistical intervals or performance benchmark. No official source admission, historical inputs or paid jobs. Subtask E validated only; full CTR-1 gate OPEN.
+
+## CTR-E0008 — CTR-1 gap audit and boundary hardening, 2026-11-24
+
+Parent 3bb72e528d4240f9163fb3fa62bdfd2f8c683fb3; code and evidence in same publication commit. Twelve continuity/source documents and permanent project instructions reviewed. Fifteen local baseline blobs matched E0005..E0007. Parent workflow query returned no runs; no CI dispatched. Fresh Linux x86_64 local builds, GCC 14.2.0, Clang 17.0.0 (10999b6d034fe318f3d56c83bddb6572593a8bb0), CMake 3.31.6, Python 3.13.5, Git 2.47.3. Changed/new source identities:
+
+| Path | Git blob | SHA-256 |
+| --- | --- | --- |
+| CMakeLists.txt | 223b37fcd10e0cc92b59db9fa1f15674e2686171 | 17eb4b5e7906476fa996a20a56f08c0f3f0a2c9eff47dc265fdb32da0800e142 |
+| include/ctr/kernel.hpp | df7ff6b7047ce50a077f93ab39f5265bc740e59f | b3178440678b5954137fbaf7b61c7106598a12378b22c1e7fba62872c96a3f35 |
+| include/ctr/integrated.hpp | e1400572a494a760b2dac09d36cae3c64af4ea4a | 8440521249f8b2079dfc38b8fb84a0c7001544b3c49cadc7607d3a0fd478ca8d |
+| include/ctr/replay_contract.hpp | 6f0f0440cfa9b07385715a95f71927b07f982f29 | d346096a905affbdc18357af844e21f35a77d5d9ab1f246d311f2ef13dc968e2 |
+| tests/boundary_test.cpp | df79387fcf0d1f81e89fcbb6954a772e329e8970 | 02e4e10f8622a7e68d6742419717dc71b98ce75078481e31faa7b8f218c358a8 |
+
+Remaining twelve source files retain E0005..E0007 identities. Require seventeen exact source blob matches before advancing main. Commands: cmake -S . -B <build> -DCMAKE_CXX_COMPILER=<g++/clang++> -DCMAKE_BUILD_TYPE=<Debug/Release>; cmake --build <build> --parallel 2; ctest --test-dir <build> --output-on-failure; direct ctr_boundary_test. Clang sanitizer Debug flags -fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer; ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1.
+
+| Build | CTest passed | Wall time |
+| --- | --- | --- |
+| GCC Release | 9/9 | 0.97 s |
+| GCC Debug | 9/9 | 1.44 s |
+| Clang Release | 9/9 | 1.00 s |
+| Clang Debug | 9/9 | 1.65 s |
+| Clang ASan/UBSan | 9/9 | 5.16 s |
+
+45/45 CTest executions passed, no compilation/test failure or sanitizer diagnostics. All five direct outputs: boundary-v1:64 projections:752 mutations. New test: 16 masks x 2 viewers x 2 priority holders, 11 mandatory mutations each plus 48 opponent-public-to-private mutations, 64 invalid resource and 64 wrong-actor payment cases, replay identity byte mutations and final-state/missing-action/oversize/malformed rejection. Existing regressions including replay passed. No new RNG; prior seeds as E0002. Repeated build counts not independent samples. No benchmark, native games, card/agent/deck hashes, statistical intervals, official materials, historical inputs or paid compute. Gap audit CTR1_GATE_AUDIT.md explicitly leaves official gate open. Structural validation and tag comparison are not authentication.

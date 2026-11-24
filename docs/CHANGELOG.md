@@ -34,3 +34,8 @@
 - Added bounded data-driven integer modifiers with activation masks, deterministic layer/ID ordering, validation and variable final-payment fixture.
 - Integrated equivalent v1 cost evaluation; narrowed action filtering to typed resource failures and distinguished illegal actions/invariant errors. Existing replay semantics retained on tested fixtures.
 - Five fresh local configurations passed 40/40 CTest executions; CTR-E0007 and SYN-M01..05 recorded. CTR-1 remains open; authorization and official-rule validation critical path.
+
+## 2026-11-24 — CTR-1 boundary hardening and audit
+- Added canonical projection validation, direct payment action checks, fixture replay identity and expected final-state verification.
+- All five fresh builds passed 45/45 CTest executions; CTR-E0008 and SYN-V01..03 recorded.
+- Added CTR1_GATE_AUDIT.md with official acceptance gaps, source authorization checkpoint and production integration sequence. CTR-1 remains open; no official source admission.

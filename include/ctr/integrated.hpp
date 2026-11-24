@@ -57,12 +57,16 @@ inline effects::Program program() {
     return p;
 }
 inline effects::Result payment(Observation const& o, kernel::Action a) {
+    if (!effects::valid(o.resources)) throw std::invalid_argument("observation resources");
+    const auto candidates = kernel::actions(o.board);
+    if (std::find(candidates.begin(), candidates.end(), a) == candidates.end())
+        throw IllegalAction("payment action");
     if (a.kind == kernel::ActionKind::pass) return {o.resources, {}};
     const std::array root{effects::Event{effects::Kind::debit, std::uint8_t(a.actor.value),
         std::uint8_t(cost(o.board, a.actor))}};
     return effects::resolve(o.resources, root, program());
 }
-// Only trusted projections from observe() are accepted as policy inputs.
+// Structural validation does not authenticate a projection.
 inline std::vector<kernel::Action> actions(Observation const& o) {
     std::vector<kernel::Action> out;
     if (!effects::valid(o.resources)) throw std::invalid_argument("observation resources");

@@ -75,10 +75,28 @@ inline Observation observe(State const& s, Player viewer) {
     }
     return out;
 }
-// Trusted observation from observe(); policies do not receive State.
+// Validate canonical projection structure, not authenticity or freshness.
+inline bool valid(Observation const& o) {
+    if (!valid(o.viewer) || !valid(o.priority) || o.turn > turn_limit || o.visible.size() > 4) return false;
+    if (o.turn == turn_limit && (o.priority.value != 0 || o.passed)) return false;
+    std::array<unsigned, 2> counts{2, 2};
+    unsigned seen = 0, previous = 0;
+    for (auto const& v : o.visible) {
+        const unsigned id = v.id.value;
+        if (id >= 4 || v.owner != owner(v.id) || (seen && id <= previous)) return false;
+        if (v.object.zone == Zone::public_area) --counts[v.owner.value];
+        else if (v.object.zone != Zone::private_area || v.owner != o.viewer) return false;
+        seen |= 1u << id;
+        previous = id;
+    }
+    const unsigned own = 3u << (2 * o.viewer.value);
+    return (seen & own) == own && counts == o.private_counts;
+}
+// Policies receive projections, not State. Malformed projections fail closed.
 inline std::vector<Action> actions(Observation const& o) {
     std::vector<Action> out;
-    if (!valid(o.viewer) || !valid(o.priority) || o.turn >= turn_limit || o.viewer != o.priority) return out;
+    if (!valid(o)) throw std::invalid_argument("observation structure");
+    if (o.turn == turn_limit || o.viewer != o.priority) return out;
     out.push_back({o.viewer, ActionKind::pass, Entity{0}});
     for (auto const& v : o.visible)
         if (v.id.value < 4 && owner(v.id) == o.viewer && v.owner == o.viewer && v.object.zone == Zone::private_area)
