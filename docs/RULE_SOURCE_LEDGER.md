@@ -27,3 +27,6 @@ Reviewed public Riot Developer Portal pages https://developer.riotgames.com/docs
 
 ## E0011 candidate source discovery — 2026-11-25
 See docs/OFFICIAL_RULE_SOURCE_DISCOVERY.md for publisher locators, reported dates, scope, cache discrepancy and admission checklist. RB-RULES, RB-CONTENT, RB-FORMATS and RB-AUTOMATION remain pending; no official source admitted, exact current document bytes/digests not established. Reviewed Croatian intellectual property office and WIPO general methods/expression guidance; no case-specific clearance or permission inferred. No external request sent.
+
+## E0012 — trusted record validation
+Standalone source_admission.py now checks exact caller-trusted pins and explicit admitted review records for scoped use, dates, provenance and immutable byte digests. No native enforcement or authentic authorization verification; manual admission decision remains required. No official records supplied or admitted. All RB statuses unchanged. See E0012 for focused tests and current artifact retrieval blockers.

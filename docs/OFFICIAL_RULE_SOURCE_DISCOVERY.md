@@ -38,3 +38,6 @@ Required admission record per source: actual immutable locator, version and effe
 6. Review CTR-1 only when every in-scope rule has behavioral evidence and known gaps are explicit.
 
 No official mechanic has been implemented or validated by this discovery milestone. Next: resolve exact current CR/TR artifacts and scoped admission, then build the rule inventory; generic stale-command protection remains an outstanding secondary task, not a substitute for the rules.
+
+## E0012 retrieval follow-up
+Publisher indexed Rules Hub and October patch/tournament change announcements reconfirm October 9 revisions and October 16 effective dates; Radiance FAQ dated October 26 states its precedence until superseded by new CR. Opened Rules Hub still dated July 16. Alternative public locator searches corroborated reported dates but did not expose verifiable current publisher PDF bytes. OpenRift page open returned cache miss; direct local HTTPS request failed DNS. Do not adopt cached July PDF or third-party transcripts as current primary rules. No exact current immutable CR/TR locator/digest or rights admission established. New generic source_admission.py checks trusted record completeness at field level, exact pins, dates/scope and bytes; no official records admitted. See CTR-E0012.

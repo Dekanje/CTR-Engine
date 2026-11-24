@@ -40,3 +40,6 @@ Manifest-to-native execution binding is validated against the existing synthetic
 
 ## E0011 update — official source discovery
 Candidate source registry and version/scope review recorded in OFFICIAL_RULE_SOURCE_DISCOVERY.md. Current indexed and opened cached hub versions differ; exact CR/TR bytes and scope admission remain unresolved. No official implementation/test or gate advancement. Prioritize source pinning/admission and rule inventory over additional synthetic work. General legal guidance is not a case-specific determination.
+
+## E0012 update — source-profile admission validator
+Generic record/byte validation implemented and directly tested. This partially addresses infrastructure for the source ledger; it is not official admission, rule coverage or a legal decision. Exact CR/TR bytes, trusted review evidence, official precedence/completeness and rule inventory still outstanding. No existing C++ changes or full regression rerun. CTR-1 OPEN.
