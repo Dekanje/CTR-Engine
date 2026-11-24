@@ -58,3 +58,6 @@
 
 ## 2026-11-25 — CTR-1 source verification checkpoint
 - Reran focused source-admission tests (4/4), retained private research record outside GitHub and clarified public documentation boundaries. No source-code changes or official rule admission.
+
+## 2026-11-25 — CTR-1 admission test registration
+- Registered existing admission suite with CTest; isolated ON/OFF registration and 4/4 Python methods passed. No native code change or official rule admission; full project build deferred. Evidence E0014.

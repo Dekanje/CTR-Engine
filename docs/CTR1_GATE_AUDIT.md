@@ -43,3 +43,6 @@ Candidate source registry and version/scope review recorded in OFFICIAL_RULE_SOU
 
 ## E0012 update — source-profile admission validator
 Generic record/byte validation implemented and directly tested. This partially addresses infrastructure for the source ledger; it is not official admission, rule coverage or a legal decision. Exact CR/TR bytes, trusted review evidence, official precedence/completeness and rule inventory still outstanding. No existing C++ changes or full regression rerun. CTR-1 OPEN.
+
+## E0014 update — admission test registration
+Existing generic admission tests registered with CTest; exact isolated harness passed, full project build not rerun. Official source bytes and scoped admission remain missing. No rule inventory, official implementation or acceptance advancement. Further development on the critical path requires these inputs; generic work cannot substitute.

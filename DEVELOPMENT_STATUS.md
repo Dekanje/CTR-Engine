@@ -47,4 +47,6 @@ CTR-E0012 (2026-11-25): generic source-profile admission checker implemented and
 
 CTR-E0013: source-admission suite rerun 4/4; both local source identities match E0012. Current rule artifacts and scoped admission remain unverified. Detailed research records are to remain outside public version control; required notices and accurate acceptance evidence remain mandatory. No executable changes or official gameplay.
 
-Next: acquire and verify the exact current rule artifacts and trusted scoped review, then construct the numbered rule inventory. Do not repeat generic development as a substitute. CTR-1 OPEN; CTR-2 not authorized.
+CTR-E0014 (2026-11-25): registered existing source-admission suite in standard CTest configuration. Exact registration block exercised in a separate minimal CMake harness: BUILD_TESTING=ON 1/1 CTest passed (4/4 Python methods), OFF zero tests, timeout 15 s. Both existing Python source identities matched E0012. Full native clone failed DNS; no full project configure/build or regression rerun. No official source admitted or rule implemented.
+
+Next: blocked on actual current rule artifacts and appropriate scoped review. Obtain these before the numbered rule inventory. No further synthetic development or repetitive checkpoint commits as a substitute. CTR-1 OPEN; CTR-2 not authorized.

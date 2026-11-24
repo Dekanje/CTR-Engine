@@ -46,3 +46,5 @@ D032 (2026-11-25): Reconfirm publisher metadata without importing stale July PDF
 D033: Implement standalone exact-pin and scope validation of trusted review records, with finite inclusive date ranges and bounded immutable bytes. No wildcard admission, implicit approval or inferred completeness. This is not a legal determination or a runtime integration. Focused tests only because prior full workspace is unavailable; integrate into CTest when restored. No new synthetic gameplay.
 
 D034: At user direction, retain detailed source research outside public version control. Preserve private provenance, required notices, public implementation identities and truthful gate evidence. Do not rewrite historical commits or interpret private storage as authorization.
+
+D035: Register the existing source-admission suite in the standard CTest flow; test exact registration separately because full workspace cannot be cloned. Do not represent isolated harness evidence as full project validation. Stop repetitive synthetic work while required source artifacts and scoped review remain missing.

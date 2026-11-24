@@ -45,3 +45,5 @@ Distinguish source discovery from admission and engine implementation. Proposed 
 
 ## Source-profile admission validator (E0012)
 Standalone Python source_admission.py validates a caller-trusted tuple of 1..64 distinct source pins (ID, revision, SHA-256), one review per pin, exact five-dimensional scope (region, format, event, activity, distribution), explicit admitted status, publisher/locator/reviewer/evidence reference, and inclusive effective and review intervals. Reject unknown/missing/extra/duplicate pins or records and altered, empty, mutable or oversized bytes (32 MiB per artifact). Return verified immutable bytes in explicit pin order; no partial success, file or network access. Trust, completeness, precedence and legal determinations remain external obligations. Not connected to native replay or CTest; no official records admitted.
+
+E0014 update: source_admission tests are registered in root CMake under BUILD_TESTING, using the already discovered Python interpreter and 15-second timeout. Isolated registration harness passed; full-project integration build remains unverified. No runtime enforcement change.

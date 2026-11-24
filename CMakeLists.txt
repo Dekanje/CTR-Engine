@@ -132,3 +132,8 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     set_tests_properties(verified_replay PROPERTIES TIMEOUT 60)
   endif()
 endif()
+
+if(BUILD_TESTING)
+  add_test(NAME source_admission COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/tests/source_admission_test.py)
+  set_tests_properties(source_admission PROPERTIES TIMEOUT 15)
+endif()

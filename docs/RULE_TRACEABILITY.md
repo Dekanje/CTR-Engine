@@ -78,3 +78,5 @@ REP-01: validate manifest, immutable role bytes, fixed compatibility markers, in
 
 ## Source-profile validation (not a game rule)
 ADM-01: exact unique pins, trusted review records and immutable artifacts; reject missing/extra/duplicate sources and mismatched revisions/digests. ADM-02: exact five-dimensional scope, admitted status, complete provenance and inclusive effective/review windows; reject stale, pending or out-of-scope records. ADM-03: nonempty bounded immutable bytes and exact SHA-256 comparison; return in declared pin order. Evidence CTR-E0012, tests/source_admission_test.py, four focused unittest methods. No source authenticity, legal determination, completeness or native enforcement claim.
+
+E0014: ADM-01–03 now registered as CTest source_admission (guarded BUILD_TESTING, timeout 15 s). Isolated exact-registration harness passed 1/1, including all four existing Python methods. Full project build not tested. No new rule coverage.
