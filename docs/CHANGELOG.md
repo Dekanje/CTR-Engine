@@ -87,3 +87,6 @@
 
 ## 2026-11-25 — CTR-1 private chain research
 - Extended private turn candidate with fixed-cost spell payment, finalized chains, reaction timing, passes and untargeted effects. Corrected generated fixture failure and separately reran optimized sanitizer configuration; final 6/6 focused tests passed. E0022 evidence; no public runtime change or gate advancement.
+
+## 2026-11-25 — CTR-1 private pending-payment research
+- Added explicit single pending spell, restricted cleanup barriers, basic resource payment window, shared finalization and rollback. Final 8/8 private regression executions passed. E0023 evidence; full scheduler and production admission remain open.

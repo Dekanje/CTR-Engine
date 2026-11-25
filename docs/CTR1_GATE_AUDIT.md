@@ -70,3 +70,6 @@ Private restricted turn candidate now uses existing CTR RNG and storage contract
 
 ## E0022 update
 Private restricted finalized-chain and fixed-cost spell candidate passed 6/6 focused CTest executions including setup/turn regression. 992 chain traces and 1152 payment cases per configuration. Pending task/finalization sequencing, targets, full effects, real card legality, scoring/combat, complete effective profile, replay and admission remain unfinished. No complete games, production integration or acceptance advancement. CTR-1 OPEN.
+
+## E0023 update
+Private pending-payment and finalization path validated in 8/8 focused regression executions. Single pending item, restricted cleanup barriers and basic resource funding only. General task scheduler, multiple pending items, triggers, targets, complete legality, scoring/combat, replay and source admission unfinished. No complete games, production integration or acceptance advancement. CTR-1 OPEN.
