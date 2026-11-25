@@ -70,3 +70,7 @@
 
 ## 2026-11-25 — CTR-1 full native regression recovery
 - Added guarded branch-only CI workflow; complete GCC Release and Clang ASan/UBSan regressions passed 24/24. E0017 records run, toolchains and source identities. No runtime changes or official rules admission.
+
+## 2026-11-25 — CTR-1 generic object storage
+- Added typed identities, ordered membership, visibility projection, invariant checks and revision-bound atomic batch transfers as an independent generic substrate. No game mechanics added.
+- Added deterministic exhaustive small-state tests; 26/26 complete regression executions passed on GCC and Clang sanitizers. E0018 evidence; CTR-1 remains open.

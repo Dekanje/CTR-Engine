@@ -55,4 +55,6 @@ CTR-E0016: private requirements-routing inventory and preliminary effective-prof
 
 CTR-E0017: full current native and Python regression recovered via a bounded free standard hosted runner on a dedicated public validation branch. 24/24 CTest executions passed across GCC Release and Clang Debug ASan/UBSan, including source_admission in both complete builds. All 24 source/build/test blob identities match the starting revision. No runtime changes or official gameplay. Full integration gap from E0014 closed for these configurations.
 
-Next: scoped admission remains the critical-path prerequisite; then individual requirement review and authoritative state/setup implementation with independent fixtures. No CTR-2 advancement. CTR-1 OPEN. Do not substitute generic work for this prerequisite.
+CTR-E0018: reusable generic authoritative object storage implemented. Stable object/type/container/principal IDs, ordered membership, explicit visibility and count disclosure, validated snapshots, atomic batch transfers, and caller-supplied session/revision checks. Full GCC Release and Clang ASan/UBSan regression passed 26/26; all 26 source/build/test identities matched the runner. No new game-specific mechanics; existing fixture kernel unchanged.
+
+Next: scoped admission remains required for actual game semantics; review individual requirements and integrate this storage with an authoritative state/setup component only within permitted scope. Generic store is not yet connected to rules, native replay or agents. Do not advance CTR-2. CTR-1 OPEN.

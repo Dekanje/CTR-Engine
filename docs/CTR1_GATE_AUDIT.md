@@ -55,3 +55,6 @@ Private requirements routing and preliminary profile reconciliation structurally
 
 ## E0017 update
 Full-project CTest registration now validated in actual GCC Release and Clang sanitizer builds, 24/24 executions; all 24 runtime/build/test blob identities verified. Evidence linked in E0017. No new official behavior, scoped admission or semantic completeness; CTR-1 OPEN.
+
+## E0018 update
+Generic storage substrate independently implemented and validated in 26/26 complete CTest executions. Useful for future identity/state/zone integration, but no official semantics, rule-derived coverage, agent authorization, or acceptance advancement. Scoped admission and first actual gameplay state/setup remain open.

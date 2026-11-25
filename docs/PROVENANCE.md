@@ -31,3 +31,5 @@ CTR-E0012: original orchestration/source_admission.py and tests/source_admission
 CTR-E0014: original CMake registration block for existing CTR source-admission tests. No new dependencies, external implementation, official game materials or runtime code. Private research record retained separately; no authorization inferred.
 
 CTR-E0017: original CI workflow using standard hosted Ubuntu toolchain and Git/CMake/CTest/Python already present on image; no third-party workflow action, engine dependency or game materials added. Exact toolchain and source evidence in E0017. No AlphaRune or historical input.
+
+CTR-E0018: original include/ctr/object_store.hpp and tests/object_store_test.cpp; existing CTR typed ID primitive and standard C++20 containers/algorithms. CMake registration and CI configuration extended. Generic storage contracts and original test cases only; no official game content or other engine code imported. No external dependency or scope clearance.
