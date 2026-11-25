@@ -144,3 +144,6 @@
 
 ## 2026-11-25 — CTR-1 private conversion with spell-completion batches
 - Verified E0040 archive/source identities. Explicit open-state boundary and invariant, admitted supported conversion/spell-completion mixed profiles; retained existing Focus and cleanup behavior. Corrected repeated-payment fixture and expanded decline/cancellation coverage. Final 44/44 cumulative CTest executions passed. E0041; generalized timing remains open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private source-bound state-changing effects
+- Verified E0041 archive/source identities. Added restricted finalized damage/healing instructions for unit-inciting sources, exact logical reference resolution and missing-source handling, preserved movement identity and lethal cleanup barriers. Initial and expanded focused tests passed; final 46/46 cumulative CTest executions passed. E0042; general event/cleanup scheduling remains open, public runtime unchanged.
