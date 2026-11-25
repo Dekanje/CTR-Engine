@@ -61,4 +61,6 @@ CTR-E0019: implemented reusable ordered sampling, explicit permutation outcomes,
 
 CTR-E0020: separate private original rules-derived setup research prototype implemented and locally tested for ordinary 1v1 constructed first-game initialization. Two focused native configurations passed; no production engine changes, full repository regression, actual games or scoped admission claim. Private implementation and detailed traceability retained in user-controlled artifact; production integration withheld.
 
-Next: reconcile the private candidate with authoritative storage/RNG/replay contracts and complete scoped review, then implement actual turn sequencing and behavioral fixtures within permitted scope. No CTR-2 advancement. CTR-1 OPEN.
+CTR-E0021: private setup prototype migrated to exact existing CTR RNG; handoff into existing authoritative store preserves all physical identities, incarnations and ordered membership. Restricted rules-derived turn and basic resource operations implemented and tested locally with abstract types. Final 4/4 focused CTest executions passed, including setup regression. No production code change, full repository regression, source admission or complete games.
+
+Next: implement task/chain sequencing and card/ability resolution with independent fixtures; add cost payment, scoring and unit lifecycle, then reconcile serialization and production admission. CTR-1 OPEN; no CTR-2 advancement.

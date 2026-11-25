@@ -64,3 +64,6 @@ Generic ordered sampling and exchange implemented on authoritative storage, vali
 
 ## E0020 update
 Private rules-derived ordinary first-game setup candidate passed 2/2 focused native test executions. Not production integrated or admitted; no full-game behavioral evidence. Scoped review, integration and remaining semantics still required. CTR-1 OPEN.
+
+## E0021 update
+Private restricted turn candidate now uses existing CTR RNG and storage contracts. Final 4/4 focused CTest executions, including setup regression, passed. Actual scoring, card resolution, chain/timing, complete legality, source admission and full game validation remain absent. No production integration or acceptance advancement. CTR-1 OPEN.

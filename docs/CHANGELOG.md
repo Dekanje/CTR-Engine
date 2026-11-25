@@ -81,3 +81,6 @@
 
 ## 2026-11-25 — CTR-1 private setup research
 - Created and tested separate original rules-derived setup prototype in private workspace. Evidence E0020; no production engine changes or acceptance advancement.
+
+## 2026-11-25 — CTR-1 private turn research
+- Migrated private setup candidate to shared RNG and added complete storage handoff, restricted turn sequencing and basic resource operations. Corrected initial test compilation warning; final 4/4 focused test executions passed. E0021 evidence; public runtime unchanged, CTR-1 open.
