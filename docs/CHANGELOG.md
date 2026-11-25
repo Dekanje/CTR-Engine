@@ -162,3 +162,6 @@
 
 ## 2026-11-25 — CTR-1 private active Kill pre-transfer placement
 - Verified exact E0046 archive/source identities. Suspended active Kill orders formal pending Deathknell before atomic removal; commit barrier blocks finalization/cleanup/priority, preserves snapshot and schedules subsequent completion. Migrated two affected fixtures, added no-eligible and post-combat paths; initial mixed executable crash cleared by forced rebuild, expanded focused and final 54/54 cumulative tests passed. E0047; passive pre-transfer placement and replacements open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private passive Kill pre-transfer placement
+- Verified exact E0047 archive/source identities. Freeze complete lethal batch, place eligible pending items before atomic removal, preserve earlier chronological orders and hold preplaced items through special combat heal/recall. Removed deferred death queue, migrated two fixtures and added actual recall and negative barrier checks. Initial/expanded focused and final 54/54 cumulative tests passed. E0048; cancellation/replacements and attribution open, public runtime unchanged.
