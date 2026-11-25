@@ -132,3 +132,6 @@
 
 ## 2026-11-25 — CTR-1 private explicit combat-opening tasks
 - Verified E0036 archive/source identities; added restricted legend combat-start capture, explicit role establishment, separate start/designation batches and start-state reset. Added integrated opening barriers, effective-Might and combat reopening tests; final 36/36 cumulative CTest executions passed. E0037; simultaneous showdown-start and generalized timing remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private simultaneous showdown/combat starts
+- Verified E0037 archive and source identities. Added ordinary showdown-start task and simultaneous combat/showdown-start legend batch, separate role-designation batch and closure revision reset. Corrected strict GCC fixture warning; final 38/38 cumulative tests passed. E0038; broader source eligibility and generalized timing remain open, public runtime unchanged.
