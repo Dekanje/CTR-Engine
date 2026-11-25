@@ -105,3 +105,6 @@
 
 ## 2026-11-25 — CTR-1 private movement and scoring research
 - Added restricted battlefield movement/control, controlled deployment, showdown focus, Conquer/Hold, final-point restriction and eight-point victory; combat resolution explicitly blocks. Final 18/18 private regression executions passed; six scripted abstract terminal paths per configuration. E0028; public runtime unchanged, CTR-1 open.
+
+## 2026-11-25 — CTR-1 isolated private combat assignment research
+- E0028 archive located but unavailable for raw restoration; did not modify or reconstruct prior private engine. Added separate restricted combat allocation candidate and independent oracle tests. Final 2/2 focused executions passed; E0029. Full integration, regression, combat cleanup and acceptance remain open.
