@@ -79,3 +79,6 @@ Restricted multi-pending logical trigger scheduler validated in 10/10 focused re
 
 ## E0025 update
 Restricted finalized-chain targeting and counter effects validated in 12/12 focused private regression executions. Physical incarnation references and logical identity supported; full re-entry coverage, board/multiple targets, complete effects, costs, recursive tasks, cleanup, units/scoring/combat, replay and source admission unfinished. No production integration, complete games or acceptance advancement. CTR-1 OPEN.
+
+## E0026 update
+Restricted resource-cost evaluation and paid triggered abilities validated in 14/14 focused private regression executions. General cost evaluator, optional/non-resource/universal costs, dynamic triggered costs, complete effects, recursive tasks, board/unit lifecycle, real cleanup, combat/scoring, serialized replay and source admission unfinished. No production integration, complete games or acceptance advancement. CTR-1 OPEN.

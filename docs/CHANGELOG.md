@@ -96,3 +96,6 @@
 
 ## 2026-11-25 — CTR-1 private target and counter research
 - Added revision-bound single finalized-chain targeting, stable references, revalidation, restricted counter effects, independent draw after target loss and rollback checks. Final 12/12 focused private regression executions passed; E0025. Public runtime unchanged, CTR-1 open.
+
+## 2026-11-25 — CTR-1 private restricted cost research
+- Added restricted cost policies, state-dependent resource discounts, locked spell costs, explicit paid-trigger windows and decline; corrected compiler warning and reran interrupted sanitizer test command. Final 14/14 focused private regression executions passed; E0026. Public runtime unchanged, CTR-1 open.
