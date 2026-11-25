@@ -129,3 +129,6 @@
 
 ## 2026-11-25 — CTR-1 private chronological trigger batches
 - Verified E0035 archive/source identities; added revision-stamped batches, restricted controller choices, exact task-order invariants and mixed spell-completion/designation scheduling. Updated obsolete mixed-profile rejection assertion and added independent integrated tests, including paid later-batch paths. Final 34/34 cumulative CTest executions passed. E0036; generalized opening/cleanup scheduler remains open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private explicit combat-opening tasks
+- Verified E0036 archive/source identities; added restricted legend combat-start capture, explicit role establishment, separate start/designation batches and start-state reset. Added integrated opening barriers, effective-Might and combat reopening tests; final 36/36 cumulative CTest executions passed. E0037; simultaneous showdown-start and generalized timing remain open, public runtime unchanged.
