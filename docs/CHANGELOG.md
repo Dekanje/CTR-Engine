@@ -156,3 +156,6 @@
 
 ## 2026-11-25 — CTR-1 private active Kill and direct spell attribution
 - Verified E0044 archive/source identities. Added restricted direct targeted Kill, distinct departure event and immutable killing-spell attribution; integrated existing self-death scheduling and tested invalidated/countered targets and enemy combat deaths. Corrected reaction fixture; final 52/52 cumulative tests passed. E0045; intra-transition event identity and generalized attribution/pending timing remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private intra-transition trigger batch identities
+- Verified exact E0045 archive/source identities. Revision/ordinal batches separate active death from spell completion, update all ordering/chronology invariants and remove mixed-profile guard. Updated obsolete rejection assertion and added integrated mixed-event, stale and counter tests. Final 54/54 cumulative CTest executions passed. E0046; formal pending placement and general event allocation remain open, public runtime unchanged.
