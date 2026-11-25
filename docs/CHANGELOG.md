@@ -102,3 +102,6 @@
 
 ## 2026-11-25 — CTR-1 private unit lifecycle research
 - Added own-base unit deployment via shared payment, authoritative membership, readiness, board targets, damage, lethal cleanup, healing and redeployment. Corrected compile/fixture errors and resumed interrupted sanitizer build. Final 16/16 focused regression executions passed; E0027. Public runtime unchanged, CTR-1 open.
+
+## 2026-11-25 — CTR-1 private movement and scoring research
+- Added restricted battlefield movement/control, controlled deployment, showdown focus, Conquer/Hold, final-point restriction and eight-point victory; combat resolution explicitly blocks. Final 18/18 private regression executions passed; six scripted abstract terminal paths per configuration. E0028; public runtime unchanged, CTR-1 open.

@@ -85,3 +85,6 @@ Restricted resource-cost evaluation and paid triggered abilities validated in 14
 
 ## E0027 update
 Restricted base-only unit deployment and lifecycle validated in 16/16 focused regression executions. No battlefield control, movement, combat/scoring, general cleanup/trigger/effect semantics, actual Might modifiers, complete card legality, replay or production admission. No complete games or acceptance advancement. CTR-1 OPEN.
+
+## E0028 update
+Restricted movement/control, noncombat showdown and scoring/victory validated in 18/18 focused private regression executions, including six abstract terminal scenarios per configuration. Explicit combat blocker, no complete combat, effect/trigger/modifier/legality coverage, actual card catalog, serialized replay or production admission. No completed competitive games or acceptance advancement. CTR-1 OPEN.
