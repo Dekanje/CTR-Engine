@@ -40,3 +40,5 @@
 - E0013: private source research record requires durable user-controlled retention outside GitHub. Current official document bytes and scoped admission still unavailable. No official rule coverage. Previous public history remains unchanged; no claim of erasure.
 
 - E0014: source-admission CTest registration now present in root CMake configuration; tested using an isolated exact-registration harness only, not a complete root project build. Full native workspace could not be retrieved (DNS failure). No change to runtime admission enforcement. Current rules artifacts and scoped review remain outstanding; no official rule behavior.
+
+- E0015 supersedes the earlier base-reference availability blocker: supplied artifacts are readable and structurally indexed, but independent publisher byte comparison, precedence/completeness and scoped admission remain unresolved. Structural index agreement is not semantic rule coverage. Private records must remain available to the user. No new engine implementation or regression run.

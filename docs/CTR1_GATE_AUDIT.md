@@ -46,3 +46,6 @@ Generic record/byte validation implemented and directly tested. This partially a
 
 ## E0014 update — admission test registration
 Existing generic admission tests registered with CTest; exact isolated harness passed, full project build not rerun. Official source bytes and scoped admission remain missing. No rule inventory, official implementation or acceptance advancement. Further development on the critical path requires these inputs; generic work cannot substitute.
+
+## E0015 update
+Base-reference access restored and private numbered index verified structurally. Scoped admission, complete effective rule profile, semantic classification and behavioral evidence still outstanding. No official implementation or regression claim; CTR-1 OPEN.
