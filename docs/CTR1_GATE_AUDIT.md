@@ -67,3 +67,6 @@ Private rules-derived ordinary first-game setup candidate passed 2/2 focused nat
 
 ## E0021 update
 Private restricted turn candidate now uses existing CTR RNG and storage contracts. Final 4/4 focused CTest executions, including setup regression, passed. Actual scoring, card resolution, chain/timing, complete legality, source admission and full game validation remain absent. No production integration or acceptance advancement. CTR-1 OPEN.
+
+## E0022 update
+Private restricted finalized-chain and fixed-cost spell candidate passed 6/6 focused CTest executions including setup/turn regression. 992 chain traces and 1152 payment cases per configuration. Pending task/finalization sequencing, targets, full effects, real card legality, scoring/combat, complete effective profile, replay and admission remain unfinished. No complete games, production integration or acceptance advancement. CTR-1 OPEN.

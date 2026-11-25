@@ -84,3 +84,6 @@
 
 ## 2026-11-25 — CTR-1 private turn research
 - Migrated private setup candidate to shared RNG and added complete storage handoff, restricted turn sequencing and basic resource operations. Corrected initial test compilation warning; final 4/4 focused test executions passed. E0021 evidence; public runtime unchanged, CTR-1 open.
+
+## 2026-11-25 — CTR-1 private chain research
+- Extended private turn candidate with fixed-cost spell payment, finalized chains, reaction timing, passes and untargeted effects. Corrected generated fixture failure and separately reran optimized sanitizer configuration; final 6/6 focused tests passed. E0022 evidence; no public runtime change or gate advancement.

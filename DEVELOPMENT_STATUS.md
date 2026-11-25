@@ -63,4 +63,6 @@ CTR-E0020: separate private original rules-derived setup research prototype impl
 
 CTR-E0021: private setup prototype migrated to exact existing CTR RNG; handoff into existing authoritative store preserves all physical identities, incarnations and ordered membership. Restricted rules-derived turn and basic resource operations implemented and tested locally with abstract types. Final 4/4 focused CTest executions passed, including setup regression. No production code change, full repository regression, source admission or complete games.
 
-Next: implement task/chain sequencing and card/ability resolution with independent fixtures; add cost payment, scoring and unit lifecycle, then reconcile serialization and production admission. CTR-1 OPEN; no CTR-2 advancement.
+CTR-E0022: private restricted spell and finalized-chain research extends E0021 with atomic fixed Energy/domain-Power payment, reactions, priority passes, two untargeted effects and owner-trash transfer. Final 6/6 focused CTest executions passed after correcting a generated fixture and rerunning sanitizer with -O1. No production runtime change, full repository regression, complete source admission or complete games.
+
+Next: actual pending payment/finalization and outstanding-task scheduler, target selection/revalidation, cost modifiers and counter effects, then units, scoring and combat. Complete effective-profile review, serialized replay and scoped admission before production integration. CTR-1 OPEN; no CTR-2 advancement.
