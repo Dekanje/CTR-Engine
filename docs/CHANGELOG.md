@@ -150,3 +150,6 @@
 
 ## 2026-11-25 — CTR-1 private mark events and passive lethal departures
 - Verified exact E0042 archive/source identities. Added authority-only revision-stamped actual mark changes and pre-removal snapshots for passive lethal cleanup; retained atomic batch removal. Corrected helper declaration and missing fixture cleanup; expanded source-lethal tests; final 48/48 cumulative CTest executions passed. E0043; death-trigger scheduling and kill attribution remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private passive unit Deathknell and combat continuation
+- Verified E0043 archive/source identities. Captured restricted death-trigger eligibility before atomic removal, reused chronological scheduler and added combat death-chain barrier after heal/recall and before result. Corrected strict compiler warnings, expanded ability/reaction-caused death coverage. Final 50/50 cumulative CTest executions passed. E0044; formal pending placement and kill attribution remain open, public runtime unchanged.
