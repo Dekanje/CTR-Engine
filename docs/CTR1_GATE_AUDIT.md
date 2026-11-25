@@ -61,3 +61,6 @@ Generic storage substrate independently implemented and validated in 26/26 compl
 
 ## E0019 update
 Generic ordered sampling and exchange implemented on authoritative storage, validated in 28/28 complete CTest executions. User confirmed headless simulation/result scope. No complete setup controller, logical object incarnation, official rule acceptance, source admission or native games. Detailed setup review retained separately. CTR-1 OPEN.
+
+## E0020 update
+Private rules-derived ordinary first-game setup candidate passed 2/2 focused native test executions. Not production integrated or admitted; no full-game behavioral evidence. Scoped review, integration and remaining semantics still required. CTR-1 OPEN.

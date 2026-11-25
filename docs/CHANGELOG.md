@@ -78,3 +78,6 @@
 ## 2026-11-25 — CTR-1 ordered sampling
 - Confirmed headless result-only scope in project instructions and plan; no change to admission gates.
 - Added explicit permutation, exact front extraction and atomic exchange primitives on existing store. Full 28/28 CTest executions passed; E0019. No complete setup or official gameplay acceptance.
+
+## 2026-11-25 — CTR-1 private setup research
+- Created and tested separate original rules-derived setup prototype in private workspace. Evidence E0020; no production engine changes or acceptance advancement.

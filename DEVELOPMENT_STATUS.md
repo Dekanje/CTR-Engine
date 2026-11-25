@@ -59,4 +59,6 @@ CTR-E0018: reusable generic authoritative object storage implemented. Stable obj
 
 CTR-E0019: implemented reusable ordered sampling, explicit permutation outcomes, exact front extraction and atomic draw-before-return exchange on the E0018 object store. Full GCC Release and Clang ASan/UBSan regression passed 28/28; all 28 source/build/test identities matched checkout log. Headless-only scope recorded. Private setup review identifies additional semantic gaps. No complete game initialization, official mechanics acceptance or native Riftbound games.
 
-Next: scoped admission, authoritative logical-object lifecycle and setup orchestration with explicit chance/choices, independently reviewed requirements and real behavioral tests. Generic sampling is not the game-specific phase controller. CTR-1 OPEN; no CTR-2 advancement.
+CTR-E0020: separate private original rules-derived setup research prototype implemented and locally tested for ordinary 1v1 constructed first-game initialization. Two focused native configurations passed; no production engine changes, full repository regression, actual games or scoped admission claim. Private implementation and detailed traceability retained in user-controlled artifact; production integration withheld.
+
+Next: reconcile the private candidate with authoritative storage/RNG/replay contracts and complete scoped review, then implement actual turn sequencing and behavioral fixtures within permitted scope. No CTR-2 advancement. CTR-1 OPEN.

@@ -57,3 +57,5 @@ D038: Implement reusable generic ordered object storage independently of game ru
 
 D039: User explicitly confirmed headless offline simulation and result exports only; remove UI/visual game client from intended scope, preserve correctness and admission gates.
 D040: Reuse generic storage for authority-only explicit Fisher-Yates choice replay, exact front extraction and atomic exchange from original membership. Count limits and return order supplied by authority; no game-specific phase, depletion or legality policy. Zero-count operations increment revision for freshness. No authority or semantic compliance inferred from stable storage IDs.
+
+D041: In response to explicit user request, develop independently authored abstract-mechanics setup research candidate separately with artificial type IDs, no copied expression or protected card assets. Retain code/traceability privately pending production admission and publication review; no legal clearance inferred. Reconcile duplicated state/RNG before integration; no acceptance gate bypass.
