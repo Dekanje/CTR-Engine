@@ -135,3 +135,6 @@
 
 ## 2026-11-25 — CTR-1 private simultaneous showdown/combat starts
 - Verified E0037 archive and source identities. Added ordinary showdown-start task and simultaneous combat/showdown-start legend batch, separate role-designation batch and closure revision reset. Corrected strict GCC fixture warning; final 38/38 cumulative tests passed. E0038; broader source eligibility and generalized timing remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private start-trigger source eligibility
+- Verified E0038 archive/source identities. Added explicit unit and controlled-field start selectors, pre-designation minimum Might, immutable logical source/owner/controller/location snapshots and authority-only audit. Tested duplicate physical copies, source departure, failed eligibility and invalid profiles. Final 40/40 cumulative CTest executions passed. E0039; general battlefield semantics and timing remain open, public runtime unchanged.
