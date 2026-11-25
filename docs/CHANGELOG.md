@@ -165,3 +165,6 @@
 
 ## 2026-11-25 — CTR-1 private passive Kill pre-transfer placement
 - Verified exact E0047 archive/source identities. Freeze complete lethal batch, place eligible pending items before atomic removal, preserve earlier chronological orders and hold preplaced items through special combat heal/recall. Removed deferred death queue, migrated two fixtures and added actual recall and negative barrier checks. Initial/expanded focused and final 54/54 cumulative tests passed. E0048; cancellation/replacements and attribution open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private restricted death replacement
+- Verified E0048 archive/source identities. Added mandatory self-to-hand replacement for active/passive Kill, exact pending cancellation, separate replaced-death audit, mixed lethal batch ordering and explicit unsupported same-controller choice. Added focused tests and re-entry/rollback checks; final 56/56 cumulative tests passed. E0049; generalized replacement/prevention and attribution remain open, public runtime unchanged.
