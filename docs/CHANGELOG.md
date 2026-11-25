@@ -108,3 +108,6 @@
 
 ## 2026-11-25 — CTR-1 isolated private combat assignment research
 - E0028 archive located but unavailable for raw restoration; did not modify or reconstruct prior private engine. Added separate restricted combat allocation candidate and independent oracle tests. Final 2/2 focused executions passed; E0029. Full integration, regression, combat cleanup and acceptance remain open.
+
+## 2026-11-25 — CTR-1 isolated staged combat transaction
+- Verified E0029 archive, reused exact allocation helper and tests, added revision/incarnation-bound attacker-first transaction with simultaneous marked-damage output and cleanup barrier. Corrected strict GCC fixture build failure; final 4/4 focused tests passed. E0030; E0028 restore still blocked, public runtime unchanged, CTR-1 open.
