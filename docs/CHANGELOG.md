@@ -123,3 +123,6 @@
 
 ## 2026-11-25 — CTR-1 private combat-opening triggers
 - Verified E0033 archive/source identities. Integrated restricted first-gain attack/defend trigger eligibility and source snapshots, role-based ordering, existing pending/finalized/payment/cleanup scheduler and trigger-opened Focus retention. Strengthened exact eligibility assertions; final 30/30 cumulative tests passed. E0034; later gains and generalized timing/effects remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private late combat designations
+- Restored exact E0034. Added restricted effect movement during combat, deferred role update before lethal cleanup, later first-gain trigger scheduling and same-incarnation repeat suppression, target revalidation and chain/Focus continuity. Corrected GCC fixture warning and expanded tests; final 32/32 cumulative executions passed. E0035; chronological mixed trigger batches and general timing remain open, public runtime unchanged.
