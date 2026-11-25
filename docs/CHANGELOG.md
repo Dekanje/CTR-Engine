@@ -138,3 +138,6 @@
 
 ## 2026-11-25 — CTR-1 private start-trigger source eligibility
 - Verified E0038 archive/source identities. Added explicit unit and controlled-field start selectors, pre-designation minimum Might, immutable logical source/owner/controller/location snapshots and authority-only audit. Tested duplicate physical copies, source departure, failed eligibility and invalid profiles. Final 40/40 cumulative CTest executions passed. E0039; general battlefield semantics and timing remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private existing-showdown conversion
+- Verified E0039 archive/source identities. Added restricted opposing-unit entry into noncombat showdown, conversion after stable open-state cleanup, staging cancellation, Focus preservation and distinct combat-start event, explicit role establishment and closure reset. Initial/expanded focused tests and final 42/42 cumulative CTest executions passed. E0040; conversion with spell-completion triggers and generalized timing remain open, public runtime unchanged.
