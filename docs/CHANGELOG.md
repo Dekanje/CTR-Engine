@@ -114,3 +114,6 @@
 
 ## 2026-11-25 — CTR-1 cumulative private combat integration
 - Restored exact E0028 archive from user reattachment and reran 18/18 baseline tests. Reused exact E0030 allocation/transaction helpers and integrated authoritative staged damage, repeated cleanup, global healing, recall, result and restricted control/scoring. Corrected strict GCC fixture warning and resumed interrupted Clang build; final 24/24 cumulative test executions passed. E0031; restoration blocker resolved, production gate open and public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private combat designation and keywords
+- Verified E0031 archive and source hashes. Added early derived combat designation, static Assault/Shield effective Might, targeted stun lifecycle, Tank/Backline roster flags and conflict-choice persistence. Final 26/26 cumulative CTest executions passed after resuming interrupted builds. E0032; public runtime unchanged, CTR-1 open.
