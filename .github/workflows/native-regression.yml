@@ -1,0 +1,42 @@
+name: CTR native regression
+on:
+  push:
+    branches:
+      - ctr-qa-e0017
+permissions: {}
+jobs:
+  native:
+    if: github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Fetch exact public source
+        shell: bash
+        run: |
+          git init .
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --no-tags --depth=1 origin "$GITHUB_SHA"
+          git checkout --detach FETCH_HEAD
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          git ls-tree -r HEAD -- CMakeLists.txt include src orchestration tests
+          g++ --version
+          clang++ --version
+          cmake --version
+          python3 --version
+      - name: GCC Release full regression
+        shell: bash
+        run: |
+          cmake -S . -B build-gcc-release -DCMAKE_CXX_COMPILER=g++ -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+          cmake --build build-gcc-release --parallel 2
+          ctest --test-dir build-gcc-release --output-on-failure --no-tests=error
+          test "$(ctest --test-dir build-gcc-release -N | grep 'Total Tests:')" = "Total Tests: 12"
+      - name: Clang sanitizer full regression
+        shell: bash
+        env:
+          ASAN_OPTIONS: detect_leaks=1:halt_on_error=1
+          UBSAN_OPTIONS: halt_on_error=1
+        run: |
+          cmake -S . -B build-clang-san -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTING=ON -DCMAKE_CXX_FLAGS="-fsanitize=address,undefined -fno-sanitize-recover=all -fno-omit-frame-pointer"
+          cmake --build build-clang-san --parallel 2
+          ctest --test-dir build-clang-san --output-on-failure --no-tests=error
+          test "$(ctest --test-dir build-clang-san -N | grep 'Total Tests:')" = "Total Tests: 12"
