@@ -67,3 +67,6 @@
 
 ## 2026-11-25 — CTR-1 requirements routing
 - Completed preliminary private requirements routing and structural integrity audit. No engine behavior changes or gate advancement. Evidence E0016.
+
+## 2026-11-25 — CTR-1 full native regression recovery
+- Added guarded branch-only CI workflow; complete GCC Release and Clang ASan/UBSan regressions passed 24/24. E0017 records run, toolchains and source identities. No runtime changes or official rules admission.

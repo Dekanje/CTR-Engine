@@ -50,3 +50,5 @@ D034: At user direction, retain detailed source research outside public version 
 D035: Register the existing source-admission suite in the standard CTest flow; test exact registration separately because full workspace cannot be cloned. Do not represent isolated harness evidence as full project validation. Stop repetitive synthetic work while required source artifacts and scoped review remain missing.
 
 D036: Route requirements provisionally by rule family, preserving every numbered identity and keeping individual review and implementation status separate. Do not promote candidate scenarios to test evidence. Retain detailed source references and profile reconciliation privately.
+
+D037: Recover full regression via dedicated public validation branch and standard free hosted runner after local DNS failure. Guard on public visibility, no secrets or external actions, no artifact/cache upload, 10-minute cap and two-way parallel build. Record exact checked-out identities and full log results; no automatic main trigger. No change to scope admission or acceptance requirements.

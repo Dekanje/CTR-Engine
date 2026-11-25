@@ -53,4 +53,6 @@ CTR-E0015: required base reference artifacts are now locally available and struc
 
 CTR-E0016: private requirements-routing inventory and preliminary effective-profile reconciliation completed. Structural audit passed, including eight injected invalid-record cases. Individual semantic review, scoped admission, and execution evidence remain outstanding. No runtime changes or native tests in this milestone.
 
-Next: resolve scoped admission for the intended use, then review individual requirements and implement/test the first authoritative state and setup components. Keep source details private. CTR-1 OPEN; no CTR-2 advancement. Do not repeat synthetic or documentation-only work as a substitute for the missing prerequisite.
+CTR-E0017: full current native and Python regression recovered via a bounded free standard hosted runner on a dedicated public validation branch. 24/24 CTest executions passed across GCC Release and Clang Debug ASan/UBSan, including source_admission in both complete builds. All 24 source/build/test blob identities match the starting revision. No runtime changes or official gameplay. Full integration gap from E0014 closed for these configurations.
+
+Next: scoped admission remains the critical-path prerequisite; then individual requirement review and authoritative state/setup implementation with independent fixtures. No CTR-2 advancement. CTR-1 OPEN. Do not substitute generic work for this prerequisite.

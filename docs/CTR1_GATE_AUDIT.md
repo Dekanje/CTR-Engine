@@ -52,3 +52,6 @@ Base-reference access restored and private numbered index verified structurally.
 
 ## E0016 update
 Private requirements routing and preliminary profile reconciliation structurally checked; manual fixture candidates are unexecuted. Individual semantic review, scoped admission and all official behavioral validation remain outstanding. CTR-1 OPEN.
+
+## E0017 update
+Full-project CTest registration now validated in actual GCC Release and Clang sanitizer builds, 24/24 executions; all 24 runtime/build/test blob identities verified. Evidence linked in E0017. No new official behavior, scoped admission or semantic completeness; CTR-1 OPEN.

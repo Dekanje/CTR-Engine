@@ -29,3 +29,5 @@ CTR-E0011: original documentation-only source discovery from public publisher me
 CTR-E0012: original orchestration/source_admission.py and tests/source_admission_test.py, Python standard library only. Test artifacts are original short strings, no game content. Public publisher metadata rechecked; no current PDF payload imported, third-party transcripts used as rules, AlphaRune or historical project inputs. No external dependency or permission determination.
 
 CTR-E0014: original CMake registration block for existing CTR source-admission tests. No new dependencies, external implementation, official game materials or runtime code. Private research record retained separately; no authorization inferred.
+
+CTR-E0017: original CI workflow using standard hosted Ubuntu toolchain and Git/CMake/CTest/Python already present on image; no third-party workflow action, engine dependency or game materials added. Exact toolchain and source evidence in E0017. No AlphaRune or historical input.
