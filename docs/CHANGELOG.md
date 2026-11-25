@@ -147,3 +147,6 @@
 
 ## 2026-11-25 — CTR-1 private source-bound state-changing effects
 - Verified E0041 archive/source identities. Added restricted finalized damage/healing instructions for unit-inciting sources, exact logical reference resolution and missing-source handling, preserved movement identity and lethal cleanup barriers. Initial and expanded focused tests passed; final 46/46 cumulative CTest executions passed. E0042; general event/cleanup scheduling remains open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private mark events and passive lethal departures
+- Verified exact E0042 archive/source identities. Added authority-only revision-stamped actual mark changes and pre-removal snapshots for passive lethal cleanup; retained atomic batch removal. Corrected helper declaration and missing fixture cleanup; expanded source-lethal tests; final 48/48 cumulative CTest executions passed. E0043; death-trigger scheduling and kill attribution remain open, public runtime unchanged.
