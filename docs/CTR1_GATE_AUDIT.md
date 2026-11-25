@@ -76,3 +76,6 @@ Private pending-payment and finalization path validated in 8/8 focused regressio
 
 ## E0024 update
 Restricted multi-pending logical trigger scheduler validated in 10/10 focused regression executions. Explicit task barriers, controller ordering, immediate resource and delayed draw effects only. Recursive triggers, real cleanup, targets, costs, complete legality, units/scoring/combat, replay and source admission unfinished. No production integration, complete games or acceptance advancement. CTR-1 OPEN.
+
+## E0025 update
+Restricted finalized-chain targeting and counter effects validated in 12/12 focused private regression executions. Physical incarnation references and logical identity supported; full re-entry coverage, board/multiple targets, complete effects, costs, recursive tasks, cleanup, units/scoring/combat, replay and source admission unfinished. No production integration, complete games or acceptance advancement. CTR-1 OPEN.

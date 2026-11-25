@@ -93,3 +93,6 @@
 
 ## 2026-11-25 — CTR-1 private trigger scheduling research
 - Added restricted post-spell trigger ordering, pending logical FIFO, optional decisions, immediate resource resolution, mixed finalized chain and explicit task barriers. Final 10/10 focused private regression executions passed; E0024. Public runtime unchanged, CTR-1 open.
+
+## 2026-11-25 — CTR-1 private target and counter research
+- Added revision-bound single finalized-chain targeting, stable references, revalidation, restricted counter effects, independent draw after target loss and rollback checks. Final 12/12 focused private regression executions passed; E0025. Public runtime unchanged, CTR-1 open.
