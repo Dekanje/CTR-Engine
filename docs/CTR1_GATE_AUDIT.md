@@ -82,3 +82,6 @@ Restricted finalized-chain targeting and counter effects validated in 12/12 focu
 
 ## E0026 update
 Restricted resource-cost evaluation and paid triggered abilities validated in 14/14 focused private regression executions. General cost evaluator, optional/non-resource/universal costs, dynamic triggered costs, complete effects, recursive tasks, board/unit lifecycle, real cleanup, combat/scoring, serialized replay and source admission unfinished. No production integration, complete games or acceptance advancement. CTR-1 OPEN.
+
+## E0027 update
+Restricted base-only unit deployment and lifecycle validated in 16/16 focused regression executions. No battlefield control, movement, combat/scoring, general cleanup/trigger/effect semantics, actual Might modifiers, complete card legality, replay or production admission. No complete games or acceptance advancement. CTR-1 OPEN.
