@@ -58,3 +58,6 @@ Full-project CTest registration now validated in actual GCC Release and Clang sa
 
 ## E0018 update
 Generic storage substrate independently implemented and validated in 26/26 complete CTest executions. Useful for future identity/state/zone integration, but no official semantics, rule-derived coverage, agent authorization, or acceptance advancement. Scoped admission and first actual gameplay state/setup remain open.
+
+## E0019 update
+Generic ordered sampling and exchange implemented on authoritative storage, validated in 28/28 complete CTest executions. User confirmed headless simulation/result scope. No complete setup controller, logical object incarnation, official rule acceptance, source admission or native games. Detailed setup review retained separately. CTR-1 OPEN.

@@ -14,3 +14,6 @@
 | CTR-6 (proposed) | Durable execution, performance and extension | Atomic checkpoints, restart/retry, reproducible run manifests, resource caps, profiling; future-set regression and independent validation |
 
 Stages may overlap only where prerequisites are satisfied. Rights and rules provenance gate all game-specific activity; generic work can proceed separately. No future Worlds format or hypothetical exclusions are assumed official. Do not claim full legality, simulation readiness or competitive strength until relevant gates are evidenced. No global-optimum or victory guarantees. Public repository excludes confidential research data. No paid infrastructure.
+
+## Confirmed headless-only scope
+Confirmed user scope (2026-11-25): headless offline computational research only. AI-controlled rules simulation, deck discovery/optimization, matchup and tournament statistics, reproducible logs and decklist/result exports. No GUI, visual simulation, human-controlled game client, online multiplayer, Riot API integration, live tournament assistance or commercial distribution. Preserve the separate scoped admission, content rights and behavioral validation requirements; this scope is not third-party permission.

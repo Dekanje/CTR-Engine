@@ -83,3 +83,6 @@ E0014: ADM-01–03 now registered as CTest source_admission (guarded BUILD_TESTI
 
 ## Generic storage infrastructure (not a game rule)
 STO-01: validate typed identities, membership, bounds and visibility configuration; explicit malformed snapshot tests. STO-02: atomic revision/session-bound ordered transfer batch; 25272 oracle comparisons and stale rejection checks per configuration, plus invalid command and overflow cases. STO-03: content/count visibility; 324 projections with hidden type/order perturbation per configuration. CTR-E0018, tests/object_store_test.cpp. Not official zone/movement/visibility compliance or comprehensive privacy proof.
+
+## Generic ordered sampling (not official gameplay coverage)
+SMP-01: explicit bounded permutation choices and pure application; 5914 permutations through length 7 checked against independent enumeration, invalid/stale commands and hidden-order observations. SMP-02: exact front extraction (36 cases), authority-only pool/owned collection and depletion rejection. SMP-03: atomic draw-before-return exchange (16 ordered subsets, 192 seeded examples, malformed selection and freshness checks); caller supplies return order. E0019 tests/ordered_sampling_test.cpp. Not a complete setup, game-specific mulligan, or official compliance test.

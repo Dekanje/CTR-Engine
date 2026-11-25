@@ -74,3 +74,7 @@
 ## 2026-11-25 — CTR-1 generic object storage
 - Added typed identities, ordered membership, visibility projection, invariant checks and revision-bound atomic batch transfers as an independent generic substrate. No game mechanics added.
 - Added deterministic exhaustive small-state tests; 26/26 complete regression executions passed on GCC and Clang sanitizers. E0018 evidence; CTR-1 remains open.
+
+## 2026-11-25 — CTR-1 ordered sampling
+- Confirmed headless result-only scope in project instructions and plan; no change to admission gates.
+- Added explicit permutation, exact front extraction and atomic exchange primitives on existing store. Full 28/28 CTest executions passed; E0019. No complete setup or official gameplay acceptance.
