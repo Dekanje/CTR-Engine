@@ -117,3 +117,6 @@
 
 ## 2026-11-25 — CTR-1 private combat designation and keywords
 - Verified E0031 archive and source hashes. Added early derived combat designation, static Assault/Shield effective Might, targeted stun lifecycle, Tank/Backline roster flags and conflict-choice persistence. Final 26/26 cumulative CTest executions passed after resuming interrupted builds. E0032; public runtime unchanged, CTR-1 open.
+
+## 2026-11-25 — CTR-1 private combat designation event history
+- Verified E0032 archive and source identities. Added explicit authority-only role transitions and logical-identity first-occurrence memory, integrated into cumulative Turn transitions. Final 28/28 cumulative tests passed after resuming interrupted builds. E0033; trigger execution and general timing remain open, public runtime unchanged.
