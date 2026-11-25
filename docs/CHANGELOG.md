@@ -120,3 +120,6 @@
 
 ## 2026-11-25 — CTR-1 private combat designation event history
 - Verified E0032 archive and source identities. Added explicit authority-only role transitions and logical-identity first-occurrence memory, integrated into cumulative Turn transitions. Final 28/28 cumulative tests passed after resuming interrupted builds. E0033; trigger execution and general timing remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private combat-opening triggers
+- Verified E0033 archive/source identities. Integrated restricted first-gain attack/defend trigger eligibility and source snapshots, role-based ordering, existing pending/finalized/payment/cleanup scheduler and trigger-opened Focus retention. Strengthened exact eligibility assertions; final 30/30 cumulative tests passed. E0034; later gains and generalized timing/effects remain open, public runtime unchanged.
