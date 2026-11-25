@@ -48,3 +48,5 @@ D033: Implement standalone exact-pin and scope validation of trusted review reco
 D034: At user direction, retain detailed source research outside public version control. Preserve private provenance, required notices, public implementation identities and truthful gate evidence. Do not rewrite historical commits or interpret private storage as authorization.
 
 D035: Register the existing source-admission suite in the standard CTest flow; test exact registration separately because full workspace cannot be cloned. Do not represent isolated harness evidence as full project validation. Stop repetitive synthetic work while required source artifacts and scoped review remain missing.
+
+D036: Route requirements provisionally by rule family, preserving every numbered identity and keeping individual review and implementation status separate. Do not promote candidate scenarios to test evidence. Retain detailed source references and profile reconciliation privately.

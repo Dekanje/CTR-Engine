@@ -42,3 +42,5 @@
 - E0014: source-admission CTest registration now present in root CMake configuration; tested using an isolated exact-registration harness only, not a complete root project build. Full native workspace could not be retrieved (DNS failure). No change to runtime admission enforcement. Current rules artifacts and scoped review remain outstanding; no official rule behavior.
 
 - E0015 supersedes the earlier base-reference availability blocker: supplied artifacts are readable and structurally indexed, but independent publisher byte comparison, precedence/completeness and scoped admission remain unresolved. Structural index agreement is not semantic rule coverage. Private records must remain available to the user. No new engine implementation or regression run.
+
+- E0016: provisional work-package routing and manual fixture candidates are not complete semantic classification or executable tests. Effective-profile review is preliminary; source-byte equivalence, individual interpretation, scope and admission remain open. No official gameplay behavior implemented or verified. No native regression rerun.

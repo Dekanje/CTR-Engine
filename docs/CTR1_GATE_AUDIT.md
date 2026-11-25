@@ -49,3 +49,6 @@ Existing generic admission tests registered with CTest; exact isolated harness p
 
 ## E0015 update
 Base-reference access restored and private numbered index verified structurally. Scoped admission, complete effective rule profile, semantic classification and behavioral evidence still outstanding. No official implementation or regression claim; CTR-1 OPEN.
+
+## E0016 update
+Private requirements routing and preliminary profile reconciliation structurally checked; manual fixture candidates are unexecuted. Individual semantic review, scoped admission and all official behavioral validation remain outstanding. CTR-1 OPEN.

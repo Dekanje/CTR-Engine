@@ -64,3 +64,6 @@
 
 ## 2026-11-25 — CTR-1 requirements intake
 - Resolved base-reference access and verified private structural inventory. No runtime changes or gate advancement. Evidence E0015.
+
+## 2026-11-25 — CTR-1 requirements routing
+- Completed preliminary private requirements routing and structural integrity audit. No engine behavior changes or gate advancement. Evidence E0016.

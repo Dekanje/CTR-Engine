@@ -51,4 +51,6 @@ CTR-E0014 (2026-11-25): registered existing source-admission suite in standard C
 
 CTR-E0015: required base reference artifacts are now locally available and structurally indexed. Independent extraction agreement verified; details and identifiers retained outside public version control. No engine behavior or test results changed. Reference completeness, effective scope and admission remain open.
 
-Next: reconcile applicable clarifications/restrictions and scoped review, classify the private numbered inventory into implementation requirements and independent behavioral fixtures. Do not claim official readiness or advance CTR-2. CTR-1 OPEN.
+CTR-E0016: private requirements-routing inventory and preliminary effective-profile reconciliation completed. Structural audit passed, including eight injected invalid-record cases. Individual semantic review, scoped admission, and execution evidence remain outstanding. No runtime changes or native tests in this milestone.
+
+Next: resolve scoped admission for the intended use, then review individual requirements and implement/test the first authoritative state and setup components. Keep source details private. CTR-1 OPEN; no CTR-2 advancement. Do not repeat synthetic or documentation-only work as a substitute for the missing prerequisite.
