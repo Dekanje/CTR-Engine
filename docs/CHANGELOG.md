@@ -159,3 +159,6 @@
 
 ## 2026-11-25 — CTR-1 private intra-transition trigger batch identities
 - Verified exact E0045 archive/source identities. Revision/ordinal batches separate active death from spell completion, update all ordering/chronology invariants and remove mixed-profile guard. Updated obsolete rejection assertion and added integrated mixed-event, stale and counter tests. Final 54/54 cumulative CTest executions passed. E0046; formal pending placement and general event allocation remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private active Kill pre-transfer placement
+- Verified exact E0046 archive/source identities. Suspended active Kill orders formal pending Deathknell before atomic removal; commit barrier blocks finalization/cleanup/priority, preserves snapshot and schedules subsequent completion. Migrated two affected fixtures, added no-eligible and post-combat paths; initial mixed executable crash cleared by forced rebuild, expanded focused and final 54/54 cumulative tests passed. E0047; passive pre-transfer placement and replacements open, public runtime unchanged.
