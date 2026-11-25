@@ -73,3 +73,6 @@ Private restricted finalized-chain and fixed-cost spell candidate passed 6/6 foc
 
 ## E0023 update
 Private pending-payment and finalization path validated in 8/8 focused regression executions. Single pending item, restricted cleanup barriers and basic resource funding only. General task scheduler, multiple pending items, triggers, targets, complete legality, scoring/combat, replay and source admission unfinished. No complete games, production integration or acceptance advancement. CTR-1 OPEN.
+
+## E0024 update
+Restricted multi-pending logical trigger scheduler validated in 10/10 focused regression executions. Explicit task barriers, controller ordering, immediate resource and delayed draw effects only. Recursive triggers, real cleanup, targets, costs, complete legality, units/scoring/combat, replay and source admission unfinished. No production integration, complete games or acceptance advancement. CTR-1 OPEN.
