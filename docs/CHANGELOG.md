@@ -153,3 +153,6 @@
 
 ## 2026-11-25 — CTR-1 private passive unit Deathknell and combat continuation
 - Verified E0043 archive/source identities. Captured restricted death-trigger eligibility before atomic removal, reused chronological scheduler and added combat death-chain barrier after heal/recall and before result. Corrected strict compiler warnings, expanded ability/reaction-caused death coverage. Final 50/50 cumulative CTest executions passed. E0044; formal pending placement and kill attribution remain open, public runtime unchanged.
+
+## 2026-11-25 — CTR-1 private active Kill and direct spell attribution
+- Verified E0044 archive/source identities. Added restricted direct targeted Kill, distinct departure event and immutable killing-spell attribution; integrated existing self-death scheduling and tested invalidated/countered targets and enemy combat deaths. Corrected reaction fixture; final 52/52 cumulative tests passed. E0045; intra-transition event identity and generalized attribution/pending timing remain open, public runtime unchanged.
