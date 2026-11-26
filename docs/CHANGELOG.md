@@ -177,3 +177,7 @@
 
 ## 2026-11-26 — CTR-1 private sequential restricted death replacement execution
 - Verified exact E0051 archive/source identities. Execute each selected independent mandatory self-to-hand replacement in its own revision; cancel exact pending Deathknell at transfer, preserve remaining frozen victims, then commit unmodified deaths atomically. Stage no-trigger/no-choice multi-victim replacement batches, maintain mandatory barriers. Migrated inherited replacement tests and added 24 mixed multi-victim paths; final 58/58 cumulative tests passed. E0052; competing effects, state-dependent replacement selection and arbitrary intermediate event dispatch remain open, public runtime unchanged.
+
+## 2026-11-26 — CTR-1 private isolated competing replacement selection
+- Restored exact E0052 via Library recovery, verified all 37 baseline identities. Added independent generic competing-effect selection, revision-bound optional decline/payment and later balance-dependent eligibility; no Turn integration.
+- Final focused GCC and Clang sanitizer tests 6/6 passed; both direct fixture runs identical. Private E0053 archive and recovery saved and verified by round-trip restoration. E0053 evidence; no full cumulative regression, production admission or gate advancement.
