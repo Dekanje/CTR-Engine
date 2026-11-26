@@ -174,3 +174,6 @@
 
 ## 2026-11-26 — CTR-1 private restricted controller-selected death replacement order
 - Verified exact E0050 archive/source identities. Replaced same-controller simultaneous mandatory self-replacement rejection with public revision-bound ordering choices, frozen victims and turn-order precedence; added no-trigger staging and preserved exact cancellation and atomic commit. Expanded inherited replacement fixture to 64 new combat paths; final 58/58 cumulative tests passed. E0051; general replacement execution and competing effects remain open, public runtime unchanged.
+
+## 2026-11-26 — CTR-1 private sequential restricted death replacement execution
+- Verified exact E0051 archive/source identities. Execute each selected independent mandatory self-to-hand replacement in its own revision; cancel exact pending Deathknell at transfer, preserve remaining frozen victims, then commit unmodified deaths atomically. Stage no-trigger/no-choice multi-victim replacement batches, maintain mandatory barriers. Migrated inherited replacement tests and added 24 mixed multi-victim paths; final 58/58 cumulative tests passed. E0052; competing effects, state-dependent replacement selection and arbitrary intermediate event dispatch remain open, public runtime unchanged.
