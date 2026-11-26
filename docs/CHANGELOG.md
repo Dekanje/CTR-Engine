@@ -201,3 +201,7 @@
 ## 2026-11-26 — CTR-1 private restricted simultaneous replacement funding and reconsideration
 - Verified exact E0057 archive and 43 source identities. Enabled existing opt-in funding in simultaneous passive batches; persist declines, reevaluate actual affordable deferred alternatives after each selected outcome, retain frozen pending identities and atomic remaining deaths. Added structural termination review and repeated-reopen/affordability-loss fixtures.
 - Initial focused GCC 2/2 and expanded strict debug fixtures passed; final GCC and Clang sanitizer regressions 70/70, matching direct outputs. Cumulative private archive and remote recovery verified. E0058 evidence; no official admission, public runtime change or gate advancement.
+
+## 2026-11-26 — CTR-1 private restricted locked replacement payment
+- Verified exact E0058 archive and 44 source identities. Added optional selected-cost lock, candidate-specific funding, explicit confirmation and correlated audits. Both-controller mixed funding/legacy/plain and deferred lock reconsideration fixtures added.
+- Three focused GCC fixtures passed; full GCC and Clang sanitizer regressions 72/72, matching direct outputs. Private cumulative archive and remote recovery verified. E0059 evidence; no official admission, public runtime change or gate advancement.
