@@ -209,3 +209,7 @@
 ## 2026-11-26 — CTR-1 private restricted replacement-payment abandonment
 - Verified exact E0059 archive and 45 source identities. Added opt-in preconfirmation abandonment, exact candidate suppression, retained funding, correlated audits and mixed-batch reconsideration tests. Full reversal of committed funding remains unsupported.
 - Corrected initial fixture map-access compile failure; stopped preliminary builds for audit-capacity/suppression/pool-correlation review and reran final clean builds. Full GCC and Clang sanitizer regressions 74/74 passed, matching direct outputs. Private archive and lossless remote recovery verified. E0060 evidence; no official admission, public runtime change or gate advancement.
+
+## 2026-11-26 — CTR-1 private restricted typed instruction dispatch
+- Verified exact E0060 archive and 46 source identities. Added original bounded typed dispatcher with captured/derived event identities, FIFO instruction frames, current authority validation, transactional step rejection and in-memory records. Integrated one existing fixed Energy-credit spell calculation without changing its native atomic transfer boundary.
+- Initial/expanded GCC focused and expanded Clang sanitizer focused passed; final cumulative GCC and Clang sanitizer regressions 76/76, matching new direct outputs and inherited chain output. Private cumulative archive and remote recovery verified. Persistent native dispatch and failure disposition remain open. E0061 evidence; no official admission, public runtime change or gate advancement.
