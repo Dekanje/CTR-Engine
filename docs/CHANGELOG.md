@@ -185,3 +185,7 @@
 ## 2026-11-26 — CTR-1 private restricted competing death replacement integration
 - Verified exact E0053 archive and all 39 baseline source identities. Integrated existing selector into active/passive single-death tasks, fixed pre-funded Energy/domain-Power eligibility and payment, revision-bound public choices, exact pending cancellation, and authoritative outcome audit. Unsupported multi-victim new-profile batches fail closed.
 - Initial and expanded focused GCC tests passed; final complete GCC and Clang sanitizer regressions 62/62, matching direct counters. Saved cumulative private archive and verified lossless remote recovery. E0054 evidence; no official admission, public runtime change or gate advancement.
+
+## 2026-11-26 — CTR-1 private restricted multi-victim dynamic replacement eligibility
+- Verified exact E0054 archive and all 40 baseline source identities. Added controller-selected next victim, rebuilt actual fixed-cost eligibility after prior real payment, individual replacement transfers and exact cancellation, deferred unchanged decisions and atomic final death batch. Explicitly reject mixed legacy/new profiles; retain existing paths.
+- Corrected initial strict GCC fixture indentation failure, reran corrected and expanded focused matrix. Final complete GCC and Clang sanitizer regressions 64/64; matching direct counters. Saved cumulative private archive and verified lossless remote recovery. E0055 evidence; no official admission, public runtime change or gate advancement.
