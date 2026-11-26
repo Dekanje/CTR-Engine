@@ -193,3 +193,7 @@
 ## 2026-11-26 — CTR-1 private restricted mixed death replacement profiles
 - Verified exact E0055 archive and 41 source identities. Classified legacy/new/plain victims for common mixed scheduler, forced free transfer without extra selector, preserved existing audits and atomic unchanged deaths. Migrated obsolete mixed rejection to eight positive two-victim paths; added 256-path mixed fixture.
 - Initial/expanded GCC focused passed; final GCC 33/33 and Clang 33/33 split-range sanitizer regression passed. Retained execution interruptions and initial sanitizer shadow-memory reservation failure; corrected runner context without instrumentation changes. Saved exact private archive and verified remote recovery. E0056 evidence; no official admission, public runtime change or gate advancement.
+
+## 2026-11-26 — CTR-1 private restricted optional replacement funding
+- Verified exact E0056 archive and 42 source identities. Added opt-in single-victim basic-rune funding, selector refresh preserving declined candidates, actual pool accounting and bounded authority funding audit. Reject multi-victim opt-in batches until reconsideration is implemented.
+- Initial and expanded focused GCC tests passed; additional affordability tests compiled into final suite. Complete GCC and Clang sanitizer regressions 68/68 passed, matching direct counters. Private archive and lossless remote recovery verified. E0057 evidence; no official admission, public runtime change or gate advancement.
