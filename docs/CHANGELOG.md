@@ -181,3 +181,7 @@
 ## 2026-11-26 — CTR-1 private isolated competing replacement selection
 - Restored exact E0052 via Library recovery, verified all 37 baseline identities. Added independent generic competing-effect selection, revision-bound optional decline/payment and later balance-dependent eligibility; no Turn integration.
 - Final focused GCC and Clang sanitizer tests 6/6 passed; both direct fixture runs identical. Private E0053 archive and recovery saved and verified by round-trip restoration. E0053 evidence; no full cumulative regression, production admission or gate advancement.
+
+## 2026-11-26 — CTR-1 private restricted competing death replacement integration
+- Verified exact E0053 archive and all 39 baseline source identities. Integrated existing selector into active/passive single-death tasks, fixed pre-funded Energy/domain-Power eligibility and payment, revision-bound public choices, exact pending cancellation, and authoritative outcome audit. Unsupported multi-victim new-profile batches fail closed.
+- Initial and expanded focused GCC tests passed; final complete GCC and Clang sanitizer regressions 62/62, matching direct counters. Saved cumulative private archive and verified lossless remote recovery. E0054 evidence; no official admission, public runtime change or gate advancement.
