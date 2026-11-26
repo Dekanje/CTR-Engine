@@ -233,3 +233,6 @@
 ## 2026-11-26 — CTR-1 private dynamic source-binding validation and disposition
 - Verified exact E0065 archive, 52 source and 77 evidence identities. Added explicit legacy/rebind/locked binding policies, declaration eligibility/identity capture, exact locked resolution, typed no-effect retirement and historical failure audit. Preserve lower chain, existing completion scheduling, simulated-preflight distinction and capacity rejection.
 - Initial/expanded/final strict GCC focused 48/54/66 passed. Final GCC Release and Clang sanitizer regressions 86/86, matching new direct and six inherited oracle outputs. No observed compiler/test failures. Private archive and lossless remote recovery verified. E0066 evidence; no official admission, public runtime change or gate advancement.
+
+## 2026-11-26 — E0066 concurrent checkpoint reconciliation
+- Preserved concurrent canonical E0066 commit 6bac32df92820dc12d6a3c8688b89b6c60b637a8 rather than overwrite with independently tested alternative. Canonical archive/evidence restored exactly; fresh GCC and Clang sanitizer 66-path focused outputs reproduced. Alternative source/validation retained separately, not merged or promoted. E0066-R1 evidence; no canonical runtime, gate or next-task change.
