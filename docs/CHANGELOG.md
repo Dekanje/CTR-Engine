@@ -168,3 +168,6 @@
 
 ## 2026-11-25 — CTR-1 private restricted death replacement
 - Verified E0048 archive/source identities. Added mandatory self-to-hand replacement for active/passive Kill, exact pending cancellation, separate replaced-death audit, mixed lethal batch ordering and explicit unsupported same-controller choice. Added focused tests and re-entry/rollback checks; final 56/56 cumulative tests passed. E0049; generalized replacement/prevention and attribution remain open, public runtime unchanged.
+
+## 2026-11-26 — CTR-1 private restricted finite damage prevention
+- Verified exact E0049 archive/source identities. Added fixed finite turn-scoped prevention, prevention-aware raw combat threshold and atomic consumption, public remaining value, separate audit, movement/departure/expiration handling. Corrected two focused fixture issues, expanded passive Deathknell and movement coverage; final 58/58 cumulative tests passed. E0050; generalized replacement ordering, competing modifiers and attribution remain open, public runtime unchanged.
