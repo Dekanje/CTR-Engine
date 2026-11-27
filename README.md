@@ -16,3 +16,7 @@ CTR-1 boundary hardening and acceptance gap audit: see docs/CTR1_GATE_AUDIT.md a
 Generic run identity infrastructure (CTR-E0009): canonical SHA-256 manifests for exact engine/rules/content/schema and replay artifact bytes. Native execution binding remains outstanding.
 
 Verified native replay (CTR-E0010): Linux-only synthetic replay worker and exact manifest artifact binding. Official gameplay remains unimplemented.
+
+
+## CTR-E0079 — 2026-11-28 (private synthetic research, CTR-1 OPEN)
+Research status 2026-11-28: private gameplay-first synthetic game driver E0078 and restricted continuous Might candidate E0079 (focused GCC/Clang sanitizer tests and three CMake GCC tests passed; full native rebuild/regression remains unverified). No actual Riftbound games, admitted official card/rules sources, complete effect coverage or CTR-1 acceptance. Public repo contains only generic source and public continuity records.
